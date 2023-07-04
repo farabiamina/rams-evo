@@ -1,0 +1,228 @@
+#evo .inner {
+    display: flex;
+    align-items: flex-start;
+    font-size: calc(10px + 0.5vw);
+    justify-content: space-between;
+}
+
+#evo .left {
+    width: 35%;
+}
+
+#evo .right {
+    width: 60%;
+}
+
+#evo h2 {
+    color: white;
+    font-size: 2.1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 109%;
+    letter-spacing: -0.8px;
+    padding-bottom: 30px;
+}
+
+#evo p {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}
+
+#evo .picture {
+    width: 100%;
+    background-image: url("../../images/evo.jpg");
+    height: 0;
+    background-size: cover;
+    padding-bottom: 56.2%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#evo .gogol-par {
+    position: absolute;
+    width: 18%;
+    top: 104%;
+    left: 60%;
+    z-index: 2;
+}
+
+#evo .aues-par {
+    position: absolute;
+    width: 22%;
+    top: -27%;
+    right: -10%;
+    /* z-index: 2; */
+}
+
+#evo .evo-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#evo .bottom {
+    display: flex;
+    gap: 5%;
+    padding-top: 50px;
+    align-items: flex-start;
+}
+
+#evo .bottom p {
+    color: var(--8, #F5F5F5);
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+}
+
+#evo .circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: #473886;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.425);
+}
+
+@media screen and (max-width: 768px) {
+    #evo .inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #evo .left {
+        width: 100%;
+    }
+
+    #evo .right {
+        width: 100%;
+    }
+
+    #evo h2 {
+        font-weight: 500;
+        text-align: center;
+    }
+
+    #evo p {
+        text-align: center;
+    }
+
+    #evo .inner {
+        font-size: calc(12px + 0.5vw);
+    }
+
+    #evo .circle-img {
+        display: none;
+    }
+
+    #evo .bottom {
+        padding-top: 30px;
+    }
+
+}
+
+
+.A {
+    left: 9%;
+    top: 40%;
+}
+.B1 {
+    left: 32%;
+    top: 40%;
+}
+.B2 {
+    left: 28%;
+    top: 35%;
+}
+.C1 {
+    left: 39%;
+    top: 25%;
+}
+.C2 {
+    left: 34%;
+    top: 20%;
+}
+.C3 {
+    left: 29%;
+    top: 24%;
+}
+.D {
+    left: 43%;
+    top: 14%;
+}
+.E1 {
+    left: 53%;
+    top: 27%;
+}
+.E2 {
+    left: 57.5%;
+    top: 29%;
+}
+.E3 {
+    left: 62%;
+    top: 31%;
+}
+.F1 {
+    left: 52%;
+    top: 35%;
+}
+.F2 {
+    left: 46%;
+    top: 36%;
+}
+.F3 {
+    left: 41%;
+    top: 36%;
+}
+.G {
+    left: 55%;
+    top: 12%;
+}
+.H1 {
+    left: 62%;
+    top: 17%;
+}
+.H2 {
+    left: 64%;
+    top: 8%;
+}
+.I1 {
+    left: 71%;
+    top: 21%;
+}
+.I2 {
+    left: 71%;
+    top: 12%;
+}
+.J1 {
+    left: 80%;
+    top: 30%;
+}
+.J2 {
+    left: 79%;
+    top: 24%;
+}
+.K1 {
+    left: 73%;
+    top: 30%;
+}
+.K2 {
+    left: 69%;
+    top: 29%;
+}
+.K3 {
+    left: 65%;
+    top: 28%;
+}

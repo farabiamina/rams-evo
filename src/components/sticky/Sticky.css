@@ -1,0 +1,39 @@
+#sticky .con {
+    height: 1600px;
+}
+
+#sticky .con {
+    /* border: 1px solid red; */
+    position: relative;
+
+}
+
+#sticky .card {
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10px;
+    height: 500px;
+}
+
+#sticky img {
+    border-radius: 12px;
+}
+
+/* #sticky .stacked-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    height: 400px;
+}
+
+#sticky .card {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(0);
+    transition: transform 0.3s;
+} */

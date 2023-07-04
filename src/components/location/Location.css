@@ -1,0 +1,200 @@
+#location .inner {
+    display: flex;
+    gap: 30px;
+    font-size: calc(10px + 0.5vw);
+    padding-bottom: 90px;
+}
+
+#location .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--2, #6166AF);
+}
+
+#location .right {
+    width: 50%;
+}
+
+#location .compas {
+    width: 18%;
+}
+
+#location .left div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    align-items: flex-start;
+}
+
+#location h2 {
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 109%;
+    letter-spacing: -0.8px;
+}
+
+#location p {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}
+
+#location button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: var(--3, #9ABA4D);
+    padding: 12px 26px 12px 26px;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+    color: white;
+}
+
+#location .parallax {
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 35px;
+}
+
+#location .parallax .scroller {
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#location .pill-item {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+#location .pill {
+    display: flex;
+    padding: 15px 40px 15px 40px;
+    border-radius: 999px;
+    background: var(--6, #FFF);
+    align-items: center;
+    gap: 14px;
+}
+
+#location .pill span {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128%;
+    letter-spacing: -0.13px;
+    color: var(--7, #1C1C29);
+    /* width: 50%; */
+}
+
+#location .pill .time {
+    color: var(--1, #473886);
+    font-size: 2.7em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 109%;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#location .pill-item img {
+    width: 77px;
+    height: 77px;
+}
+
+#location .FMT__container {
+    margin: 50px 0;
+}
+
+#location .svg {
+    border-radius: 10px;
+}
+
+@keyframes infinite-scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 1145px) {
+    #location .left div {
+        gap: 20px;
+        width: 90%;
+    }
+
+    #location .left {
+        padding: 35px;
+    }
+}
+
+#location .right button {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    #location .compas {
+        width: 15%;
+    }
+
+    #location .left div {
+        width: 100%;
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #location .compas {
+        display: none;
+    }
+
+    #location .left div {
+        margin-top: auto;
+    }
+
+    #location h2 {
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    #location .inner {
+        flex-direction: column;
+    }
+
+    #location .left, #location .right {
+        width: 100%;
+    }
+
+    #location .left button {
+        display: none;
+    }
+
+    #location .left {
+        border: none;
+        padding: 0;
+    }
+
+    #location p, #location h2 {
+        text-align: center;
+    }
+}

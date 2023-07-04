@@ -1,0 +1,61 @@
+#imp {
+    background-color: white;
+}
+
+#imp .inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#imp h2 {
+    color: var(--1, #473886);
+    padding-bottom: 30px;
+}
+
+#imp p {
+    color: var(--7, #1C1C29);
+}
+
+#imp .left,
+#imp .right {
+    width: calc(50% - 15px);
+}
+
+#imp img {
+    width: 100%;
+}
+
+#imp .cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#imp .card {
+    width: calc(100%/3 - 20px);
+    border-radius: 10px;
+    background: linear-gradient(220deg, #bb94ff21 0%, #9e66ff23 100%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 24px; */
+    /* justify-content: baseline; */
+}
+
+#imp .icon {
+    width: 30%;
+}
+
+#imp .icon2 {
+    width: 28%;
+}
+
+#imp .card p {
+    color: var(--1, #473886);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}

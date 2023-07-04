@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'AtypText';
+  src: url(./fonts/AtypDisplay-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'AtypText', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +19,70 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+span {
+  color: #f5f5f5;
+}
+
+section {
+  padding: 100px 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fade-in-up 1s ease-in-out both;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.inner {
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .inner {
+    padding: 0 20px;
+  }
+}
+
+h2 {
+  color: var(--6, #FFF);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 109%;
+  letter-spacing: -0.8px;
+}
+
+p {
+  color: var(--8, #F5F5F5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.16px;
 }

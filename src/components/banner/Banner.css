@@ -1,0 +1,137 @@
+#banner {
+    padding-top: 70px;
+    font-size: calc(0.7vw + 7px);
+}
+
+#banner h1 {
+    text-align: center;
+    font-size: 2.65em;
+    line-height: 110%;
+    letter-spacing: -1.08px;
+    color: white;
+}
+
+#banner h1>span {
+    opacity: 0;
+    animation: fade-in-up 1s ease-in-out both;
+}
+
+#banner h1>span:last-child {
+    animation-delay: 0.2s;
+}
+
+#banner span span {
+    color: #59C5C7;
+}
+
+#banner .image-wrapper {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+}
+
+#banner .ring {
+    width: 68%;
+    position: absolute;
+    left: 50%;
+    top: 61.5%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#banner .frame {
+    width: 20%;
+    position: absolute;
+    bottom: 0.3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#banner button {
+    position: absolute;
+    bottom: 0.3%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 9%;
+    height: 20%;
+    background: var(--3, #9ABA4D);
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    color: var(--1, #473886);
+    text-align: center;
+    font-size: calc(0.7vw + 3px);
+    line-height: 120%;
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 1;
+    vertical-align: middle;
+    transition: 0.3s;
+    transform-style: preserve-3d
+}
+
+#banner button:hover {
+    transform: translate(-50%, 50%) scale(1.05);
+    background-color: #59C5C7;
+    color: white;
+}
+
+#banner img.small {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #banner .frame {
+        width: 30%;
+    }
+
+    #banner button {
+        width: 13.5%;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #banner .frame {
+        width: 40%;
+    }
+
+    #banner button {
+        width: 18%;
+        height: 25%;
+        font-size: calc(1vw + 3px);
+    }
+
+    #banner img.main {
+        display: none;
+    }
+
+    #banner img.small {
+        display: inline-block;
+    }
+
+    #banner .ring {
+        width: 118%;
+        position: absolute;
+        left: 50%;
+        top: 56%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #banner .frame {
+        width: 60%;
+    }
+
+    #banner button {
+        width: 27%;
+        height: 37.5%;
+        font-size: calc(2vw + 3px);
+    }
+}

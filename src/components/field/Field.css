@@ -1,0 +1,47 @@
+#field {
+    background-color: white;
+}
+
+#field .inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#field .left {
+    width: 65%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#field .right {
+    width: calc(35% - 80px)
+}
+
+#field .left img:first-child {
+    width: 24%;
+}
+
+#field .left img:last-child {
+    width: calc(76% - 30px);
+}
+
+#field h2 {
+    color: var(--1, #473886);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 109%;
+    letter-spacing: -0.8px;
+    padding-bottom: 30px;
+}
+
+#field p {
+    color: var(--7, #1C1C29);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}
