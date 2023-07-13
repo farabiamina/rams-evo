@@ -3,21 +3,56 @@ import "./Sticky.css";
 import St1Img from "../../images/st1.jpg";
 import St2Img from "../../images/st2.jpg";
 import St3Img from "../../images/st3.jpg";
-import { Parallax } from 'react-scroll-parallax';
+import { Controller, Scene } from 'react-scrollmagic';
+
 
 const Sticky = () => {
     return (
         <section id='sticky'>
             <div className="inner">
                 <div className="con">
-                    <div translateY={[0, 100]} className="card">
+                    {/* <Controller>
+                        <Scene duration={800} triggerHook="onEnter">
+                            {(progress) => {
+                                const y = progress * 200; // Invert the progress value
+
+                                return (
+                                    <div
+                                        style={{
+                                            transform: `translateY(${y}px)`,
+                                        }}
+                                        className="card">
+                                        <img src={St1Img} alt="" />
+                                        <div className="text">
+                                            <h2>Внешняя красота</h2>
+                                            <p>Фасад RAMS EVO вдохновлен геометрической эстетикой современного города. Текстурный, но утонченный внешний образ жилого комплекса будет собран из объемных фиброцементных и клинкерных панелей в красных и бежевых тонах. А экстерьерное освещение подчеркнет динамичность дизайна. Жилой комплекс RAMS EVO станет эволюционным преображением всего района!</p>
+                                        </div>
+                                    </div>
+                                );
+                            }}
+                        </Scene>
+                        <Scene duration={800} triggerHook="onEnter">
+                            {(progress) => {
+                                const y = progress * 200; // Invert the progress value
+
+                                return (
+                                    <div style={{
+                                        transform: `translateY(${y}px)`,
+                                    }} className="card">
+                                        <img src={St2Img} alt="" />
+                                    </div>
+                                );
+                            }}
+                        </Scene>
+                    </Controller> */}
+                    <div className="card">
                         <img src={St1Img} alt="" />
                         <div className="text">
                             <h2>Внешняя красота</h2>
                             <p>Фасад RAMS EVO вдохновлен геометрической эстетикой современного города. Текстурный, но утонченный внешний образ жилого комплекса будет собран из объемных фиброцементных и клинкерных панелей в красных и бежевых тонах. А экстерьерное освещение подчеркнет динамичность дизайна. Жилой комплекс RAMS EVO станет эволюционным преображением всего района!</p>
                         </div>
                     </div>
-                    <div translateY={[0, 50]} className="card">
+                    <div className="card">
                         <img src={St2Img} alt="" />
                     </div>
                     <div className="card">

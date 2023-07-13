@@ -1,23 +1,37 @@
 #sticky .con {
-    height: 1600px;
-}
-
-#sticky .con {
     /* border: 1px solid red; */
     position: relative;
-
+    /* height: 2000px; */
 }
 
 #sticky .card {
     display: flex;
-    position: sticky;
-    position: -webkit-sticky;
     top: 10px;
-    height: 500px;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* position: sticky; */
+    /* height: 500px; */
+}
+
+#sticky .card:nth-child(1) {
+    z-index: 1;
+}
+
+#sticky .card:nth-child(2) {
+    z-index: 2;
+}
+
+#sticky .card:nth-child(3) {
+    z-index: 3;
 }
 
 #sticky img {
     border-radius: 12px;
+    width: calc(50% - 30px);
+}
+
+#sticky .text {
+    width: 50%;
 }
 
 /* #sticky .stacked-cards {

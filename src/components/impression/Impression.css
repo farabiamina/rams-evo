@@ -30,6 +30,8 @@
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 #imp .card {
@@ -39,8 +41,6 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    /* gap: 24px; */
-    /* justify-content: baseline; */
 }
 
 #imp .icon {
@@ -53,9 +53,59 @@
 
 #imp .card p {
     color: var(--1, #473886);
-    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
     letter-spacing: -0.16px;
+}
+
+@media screen and (max-width: 1181px) {
+    #imp .card {
+        width: calc(100%/3 - 10px);
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 897px) {
+    #imp .card {
+        width: calc(100%/3 - 10px);
+        padding: 20px;
+    }
+
+    #imp .left {
+        width: calc(52% - 15px);
+    }
+    #imp .right {
+        width: calc(48% - 15px);
+    }
+    #imp .cards {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #imp .right {
+        display: none;
+    }
+    #imp .left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 687px) {
+    #imp .card {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    #imp .icon {
+        width: 20%;
+    }
+    #imp .icon2 {
+        width: 19%;
+    }
+    #imp .left * {
+        text-align: center;
+    }
 }

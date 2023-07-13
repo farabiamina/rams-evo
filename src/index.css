@@ -14,6 +14,7 @@ body {
   font-family: 'AtypText', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: calc(1vw + 7px);
 }
 
 code {
@@ -69,20 +70,80 @@ button {
   }
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
 h2 {
   color: var(--6, #FFF);
-  font-size: 40px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: 109%;
   letter-spacing: -0.8px;
+  font-size: 2em;
+}
+
+a, button {
+  font-size: 0.8em;
 }
 
 p {
   color: var(--8, #F5F5F5);
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
   letter-spacing: -0.16px;
+  font-size: 0.8em;
 }
+
+@media screen and (max-width: 1024px) {
+  /* p {
+    font-size: 0.9em;
+  }
+  h2 {
+    font-size: 2.2em;
+  } */
+}
+
+/* @media screen and (max-width: 1068px) {
+  p, a, button {
+    font-size: 0.9em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+} */
+
+@media screen and (max-width: 810px) {
+  p, a, button {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p, a, button {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 2.4em;
+  }
+  section {
+    padding: 75px 0;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  h1 {
+    font-size: 3.2em;
+  }
+  p, a, button {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  section {
+    padding: 50px 0;
+  }
+}
+

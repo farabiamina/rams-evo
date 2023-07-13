@@ -1,7 +1,6 @@
 #evo .inner {
     display: flex;
     align-items: flex-start;
-    font-size: calc(10px + 0.5vw);
     justify-content: space-between;
 }
 
@@ -15,7 +14,6 @@
 
 #evo h2 {
     color: white;
-    font-size: 2.1em;
     font-style: normal;
     font-weight: 600;
     line-height: 109%;
@@ -24,7 +22,6 @@
 }
 
 #evo p {
-    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -55,7 +52,6 @@
     width: 22%;
     top: -27%;
     right: -10%;
-    /* z-index: 2; */
 }
 
 #evo .evo-img {
@@ -73,7 +69,6 @@
 
 #evo .bottom p {
     color: var(--8, #F5F5F5);
-    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -83,12 +78,14 @@
 
 #evo .circle {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+    /* width: 30px;
+    height: 30px; */
+    width: 4.5%;
+    height: 8%;
+    border-radius: 100%;
     border: 2px solid white;
     background-color: #473886;
-    font-size: 14px;
+    font-size: 0.7em;
     color: white;
     display: flex;
     justify-content: center;
@@ -119,9 +116,9 @@
         text-align: center;
     }
 
-    #evo .inner {
+    /* #evo .inner {
         font-size: calc(12px + 0.5vw);
-    }
+    } */
 
     #evo .circle-img {
         display: none;

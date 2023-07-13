@@ -9,7 +9,7 @@ const Header = () => {
     setIsDropDownOpen(prev => !prev);
   };
   return (
-    <header>
+    <header id='header'>
       <div className="inner">
         <div className="logo-con">
           <Logo className="logo" />

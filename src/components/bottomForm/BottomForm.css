@@ -7,7 +7,6 @@
 
 #bform h2 {
     color: var(--7, #1C1C29);
-    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 109%;
@@ -16,7 +15,6 @@
 
 #bform p {
     color: var(--7, #1C1C29);
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -28,7 +26,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* align-items: flex-start; */
     width: 40%;
 }
 
@@ -40,12 +37,12 @@
     border: 1px solid #888;
     background: var(--6, #FFF);
     color: #888;
-    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
     letter-spacing: -0.16px;
     outline: none;
+    font-size: 0.8em;
 }
 
 #bform button {
@@ -54,7 +51,7 @@
     background: var(--1, #473886);
     padding: 15px 20px 13px 20px;
     color: var(--6, #FFF);
-    font-size: 16px;
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;

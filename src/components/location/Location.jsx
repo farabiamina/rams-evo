@@ -80,7 +80,7 @@ const Location = () => {
                     <button>Построить маршрут</button>
                 </div>
             </div>
-            {/* <Ticker duration={50} className="ticker">
+            <ScrollVelocity className="ticker">
                 {
                     pills.map(pill =>
                         <div className="pill-item">
@@ -92,8 +92,8 @@ const Location = () => {
                         </div>
                     )
                 }
-            </Ticker> */}
-            {/* <Ticker direction={-1} duration={55} className="ticker">
+            </ScrollVelocity>
+            <ScrollVelocity direction={-1} className="ticker">
                 {pills2.map((pill, index) => (
                     <div key={index} className="pill-item" >
                         <div className="pill">
@@ -103,8 +103,7 @@ const Location = () => {
                         <img src={pill.img} alt="" />
                     </div>
                 ))}
-            </Ticker> */}
-            
+            </ScrollVelocity>
         </section>
     )
 }

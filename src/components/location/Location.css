@@ -1,8 +1,7 @@
 #location .inner {
     display: flex;
     gap: 30px;
-    font-size: calc(10px + 0.5vw);
-    padding-bottom: 90px;
+    padding-bottom: 45px;
 }
 
 #location .left {
@@ -32,15 +31,11 @@
 }
 
 #location h2 {
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 600;
     line-height: 109%;
     letter-spacing: -0.8px;
 }
 
 #location p {
-    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -67,7 +62,7 @@
     white-space: nowrap;
     display: flex;
     flex-wrap: nowrap;
-    padding-bottom: 35px;
+    padding-top: 35px;
 }
 
 #location .parallax .scroller {
@@ -93,18 +88,17 @@
 }
 
 #location .pill span {
-    font-size: 1em;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 128%;
     letter-spacing: -0.13px;
     color: var(--7, #1C1C29);
-    /* width: 50%; */
 }
 
 #location .pill .time {
     color: var(--1, #473886);
-    font-size: 2.7em;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: 109%;
@@ -136,7 +130,7 @@
     }
 }
 
-@media screen and (max-width: 1145px) {
+@media screen and (max-width: 1175px) {
     #location .left div {
         gap: 20px;
         width: 90%;
@@ -162,17 +156,13 @@
     }
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 900px) {
     #location .compas {
         display: none;
     }
 
     #location .left div {
         margin-top: auto;
-    }
-
-    #location h2 {
-        font-weight: 400;
     }
 }
 
@@ -194,7 +184,13 @@
         padding: 0;
     }
 
-    #location p, #location h2 {
+    #location p {
         text-align: center;
+    }
+    #location h2 {
+        text-align: center;
+    }
+    #location .left div {
+        align-items: unset;
     }
 }

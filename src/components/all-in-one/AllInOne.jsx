@@ -58,28 +58,28 @@ const AllInOne = () => {
             }
         }
     };
-    useEffect(() => {
-        const handleScroll = (event) => {
-            // Check the scroll direction
-            const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
+    // useEffect(() => {
+    //     const handleScroll = (event) => {
+    //         // Check the scroll direction
+    //         const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
 
-            // Handle the scroll event based on direction
-            if (scrollDirection === 'down') {
-                handleSwipe("Right");
-            } else {
-                // Scroll up logic
-                handleSwipe("Left");
-            }
-        };
+    //         // Handle the scroll event based on direction
+    //         if (scrollDirection === 'down') {
+    //             handleSwipe("Right");
+    //         } else {
+    //             // Scroll up logic
+    //             handleSwipe("Left");
+    //         }
+    //     };
 
-        // Add the event listener when the component mounts
-        window.addEventListener('wheel', handleScroll);
+    //     // Add the event listener when the component mounts
+    //     window.addEventListener('wheel', handleScroll);
 
-        // Clean up the event listener when the component unmounts
-        return () => {
-            window.removeEventListener('wheel', handleScroll);
-        };
-    }, []);
+    //     // Clean up the event listener when the component unmounts
+    //     return () => {
+    //         window.removeEventListener('wheel', handleScroll);
+    //     };
+    // }, []);
     const transition = {
         duration: 0.5,
         type: "tween",
@@ -96,8 +96,8 @@ const AllInOne = () => {
                                 // console.log(index, position);
                                 return (
                                     <motion.div key={el.i} className="container"
-                                        initial={{ opacity: el.i <= position ? 1 : 0.5, x: `${(el.i - position) * 105 + 40}%` }}
-                                        animate={{ opacity: el.i <= position ? 1 : 0.5, x: `${(el.i - position) * 105 + 40}%` }}
+                                        initial={{ opacity: el.i <= position ? 1 : 0.2, x: `${(el.i - position) * 105 + 40}%` }}
+                                        animate={{ opacity: el.i <= position ? 1 : 0.2, x: `${(el.i - position) * 105 + 40}%` }}
                                         transition={transition}
                                     >
                                         <img draggable="false" src={el.img} alt="" />
@@ -118,6 +118,19 @@ const AllInOne = () => {
                             В нескольких метрах от вашего дома появятся коворкинг, фитнес-зал, кинотеатр и детская комната. Это система All-in-One, которая будет внедрена в RAMS EVO, чтобы сделать места для работы, спорта и отдыха ближе к дому.
                         </p>
                     </div>
+                </div>
+                <div className="cards">
+                    {
+                        list.map((el) => {
+                            // console.log(index, position);
+                            return (
+                                <div key={el.i} className="card">
+                                    <img draggable="false" src={el.img} alt="" />
+                                    <p>{el.title}</p>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </section>

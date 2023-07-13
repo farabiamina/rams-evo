@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import AboutImg from "../../images/about.jpg";
 import EVOsvg from "../../svg/EVOsvg";
 import Card1Svg from "../../svg/Card1Svg";
+import Card2Svg from "../../svg/Card2Svg";
+import Card3Svg from "../../svg/Card3Svg";
+import Card4Svg from "../../svg/Card4Svg";
+import Card5Svg from "../../svg/Card5Svg";
+import Card6Svg from "../../svg/Card6Svg";
+import Card7Svg from "../../svg/Card7Svg";
+import Card8Svg from "../../svg/Card8Svg";
 import { Carousel } from 'antd';
 import ArrowSvg from "../../svg/ArrowSvg";
 
@@ -130,57 +137,57 @@ const About = () => {
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card1Svg className="card-svg" />
+                                <Card2Svg className="card-svg" />
                             </div>
-                            <p>Велопаркинг и места для хранения детских колясок</p>
+                            <p>Безопасный двор без машин</p>
                         </div>
                     </div>
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card1Svg className="card-svg" />
+                                <Card3Svg className="card-svg" />
                             </div>
-                            <p>Велопаркинг и места для хранения детских колясок</p>
+                            <p>Школа во дворе</p>
                         </div>
                     </div>
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card1Svg className="card-svg" />
+                                <Card4Svg className="card-svg" />
                             </div>
-                            <p>Велопаркинг и места для хранения детских колясок</p>
+                            <p>Public Center с доступом Wi-Fi</p>
                         </div>
                     </div>
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card1Svg className="card-svg" />
+                                <Card5Svg className="card-svg" />
                             </div>
-                            <p>Велопаркинг и места для хранения детских колясок</p>
+                            <p>Безопасность 24/7</p>
                         </div>
                     </div>
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card1Svg className="card-svg" />
+                                <Card6Svg className="card-svg" />
                             </div>
-                            <p>Велопаркинг и места для хранения детских колясок</p>
+                            <p>Смарт-паркинг: въезд по номерам и зарядки для электрокаров</p>
                         </div>
                     </div>
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card1Svg className="card-svg" />
+                                <Card7Svg className="card-svg" />
                             </div>
-                            <p>Велопаркинг и места для хранения детских колясок</p>
+                            <p>EVO-парк с беговыми дорожками</p>
                         </div>
                     </div>
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card1Svg className="card-svg" />
+                                <Card8Svg className="card-svg" />
                             </div>
-                            <p>Велопаркинг и места для хранения детских колясок</p>
+                            <p>Чистовая отделка нового формата</p>
                         </div>
                     </div>
                 </div>

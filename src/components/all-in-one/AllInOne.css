@@ -1,7 +1,7 @@
 #all .svg {
     width: 80%;
     position: relative;
-    top: 30px;
+    top: 20px;
     z-index: -1;
 }
 
@@ -17,6 +17,10 @@
     position: absolute;
 }
 
+#all .container img {
+    width: 100%;
+}
+
 #all .bottom {
     display: flex;
     gap: 136px;
@@ -28,4 +32,71 @@
     flex-direction: column;
     gap: 20px;
     width: 60%;
+}
+
+#all .cards {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #all .container {
+        width: 60%;
+        height: 100%;
+    }
+    #all .row {
+        height: 500px;
+    }
+    #all .bottom {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    #all .row {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #all .row {
+        height: 400px;
+    }
+    #all .bottom {
+        gap: 35px;
+    }
+    #all .bottom div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    #all .carousel {
+        display: none;
+    }
+    #all .svg {
+        display: none;
+    }
+    #all .bottom > img {
+        display: none;
+    }
+    #all .bottom * {
+        text-align: center;
+    }
+    #all .cards {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 50px;
+    }
+    #all .card {
+        width: 100%;
+    }
+    #all .card img {
+        width: 100%;
+    }
+    #all .card p {
+        text-align: center;
+        padding-top: 20px;
+    }
 }
