@@ -49,7 +49,7 @@ const Evolution = () => {
             >
               <GogolSvg className="gogol" />
             </Parallax>
-            <Parallax className='aues-par' translateX={[0, -470]} translateY={[0, 223]}>
+            <Parallax className='aues-par' translateX={[0, -470]} translateY={[0, 242]}>
               <AuesovSvg className="auesov" />
             </Parallax>
             {/* <Controller>

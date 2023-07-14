@@ -9,9 +9,18 @@
 #school .text {
     margin-left: 20%;
     width: 40%;
-    padding: 80px 0;
+    padding: 80px 0 0;
 }
 
 #school h2 {
     padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    #school .text {
+        margin-left: 0;
+        width: 100%;
+        padding: 80px 20px;
+        text-align: center;
+    }
 }

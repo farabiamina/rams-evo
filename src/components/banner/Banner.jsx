@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import "./Banner.css";
 import BannerImg from "../../images/banner.png";
 import BannerSmall from "../../images/bannerSmall.png";
 import Ring from "../../svg/RingSvg";
 import Frame from "../../svg/BannerFrameSvg";
+import { AppContext } from '../../context/Context';
 
 const Banner = () => {
+    const { setIsFormOpen } = useContext(AppContext);
     return (
         <section id='banner'>
             <h1>
@@ -21,7 +23,7 @@ const Banner = () => {
                     className='small' />
                 <Ring className="ring" />
                 <Frame className="frame" />
-                <button>оставить<br /> заявку</button>
+                <button onClick={() => setIsFormOpen(true)}>оставить<br /> заявку</button>
             </div>
         </section>
     )

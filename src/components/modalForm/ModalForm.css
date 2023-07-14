@@ -1,0 +1,105 @@
+#modal-form {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+#modal-form .overlay {
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#modal-form .form-con {
+    border-radius: 20px;
+    width: 500px;
+    height: 700px;
+    position: relative;
+    /* background-color: #1C1C29; */
+    background-image: linear-gradient(to bottom, transparent 50%, #1C1C29 50%);
+}
+
+#modal-form img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#modal-form form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    padding: 0 75px;
+}
+
+#modal-form input {
+    padding: 12px 15px 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    background: var(--6, #FFF);
+    color: var(--7, #1C1C29);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+    outline: none;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+#modal-form button {
+    border-radius: 10px;
+    background: var(--1, #473886);
+    padding: 12px 15px 10px 15px;
+    color: var(--6, #FFF);
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+    border: none;
+    align-self: center;
+    width: 200px;
+}
+
+#modal-form .error {
+    position: absolute;
+    height: 11px;
+    color: rgb(255, 119, 119);
+    font-size: 11px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#modal-form .error.active {
+    opacity: 1;
+}
+
+#modal-form form {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#modal-form p {
+    color: var(--8, #F5F5F5);
+    text-align: center;
+    font-size: 0.6em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 18px */
+    letter-spacing: -0.12px;
+    opacity: 0.5;
+}

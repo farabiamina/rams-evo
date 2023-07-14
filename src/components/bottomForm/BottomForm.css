@@ -1,8 +1,17 @@
+#bform .inner {
+    overflow-x: visible;
+    /* overflow-y: auto; */
+}
+
 #bform .container {
     background-color: white;
     padding: 70px;
     border-radius: 10px;
     position: relative;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+    /* display: flex;
+    align-items: flex-end; */
 }
 
 #bform h2 {
@@ -32,7 +41,7 @@
 #bform input {
     max-width: 100%;
     min-width: 60%;
-    padding: 15px 20px 13px 20px;
+    padding: 12px 15px 10px 15px;
     border-radius: 10px;
     border: 1px solid #888;
     background: var(--6, #FFF);
@@ -49,7 +58,7 @@
     align-self: flex-start;
     border-radius: 10px;
     background: var(--1, #473886);
-    padding: 15px 20px 13px 20px;
+    padding: 12px 15px 10px 15px;
     color: var(--6, #FFF);
     font-size: 0.8em;
     font-style: normal;
@@ -60,10 +69,13 @@
 }
 
 #bform .img {
+    /* position: relative; */
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 110%;
+    /* height: 110%; */
+    width: 55%;
+    /* left: 45%; */
 }
 
 #bform .error {
@@ -77,4 +89,25 @@
 
 #bform .error.active {
     opacity: 1;
+}
+
+@media screen and (max-width: 728px) {
+    #bform img {
+        display: none;
+    }
+    #bform .container {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    #bform form {
+        width: 100%;
+    }
+    #bform input {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #bform button {
+        font-size: 1.5em;
+        width: 100%;
+    }
 }

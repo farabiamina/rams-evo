@@ -4,6 +4,7 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(true);
 
   useEffect(() => {
     if (isDropDownOpen) {
@@ -15,9 +16,21 @@ const AppProvider = ({ children }) => {
     }
   }, [isDropDownOpen])
 
+  useEffect(() => {
+    if (isFormOpen) {
+      document.body.style.overflow = "hidden";
+    }
+    else {
+      document.body.style.overflowX = "hidden";
+      document.body.style.overflowY = "scroll"
+    }
+  }, [isFormOpen])
+
   const contextValue = {
     isDropDownOpen,
     setIsDropDownOpen,
+    isFormOpen,
+    setIsFormOpen,
   };
 
   return (

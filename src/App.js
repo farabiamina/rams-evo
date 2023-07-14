@@ -14,9 +14,10 @@ import Impression from './components/impression/Impression';
 import AllInOne from './components/all-in-one/AllInOne';
 import BottomForm from './components/bottomForm/BottomForm';
 import Modalheader from './components/modalHeader/Modalheader';
+import Footer from './components/footer/Footer';
+import ModalForm from './components/modalForm/ModalForm';
 
 function App() {
-  const { isDropDownOpen, setIsDropDownOpen } = useContext(AppContext);
   const [scrollerHeight, setScrollerHeight] = useState(0);
   const targetRef = useRef(null);
   let requestId = null;
@@ -96,24 +97,14 @@ function App() {
   function isMobileDevice() {
     const userAgent = navigator.userAgent.toLowerCase();
     const mobileKeywords = ['android', 'webos', 'iphone', 'ipad', 'ipod', 'blackberry', 'windows phone'];
-
     return mobileKeywords.some(keyword => userAgent.includes(keyword));
   }
-
-  useEffect(() => {
-    if (isMobileDevice()) {
-      // Code for mobile devices
-      console.log('Mobile device');
-    } else {
-      // Code for desktop devices
-      console.log('Desktop device');
-    }
-  }, [])
 
   return (
     <main>
       <Modalheader />
       <DropDown />
+      <ModalForm />
       <div ref={isMobileDevice() ? null : targetRef} id="scroll-container" className='content'>
         <Banner />
         <About />
@@ -125,6 +116,7 @@ function App() {
         <Impression />
         <AllInOne />
         <BottomForm />
+        <Footer />
       </div>
     </main>
   );

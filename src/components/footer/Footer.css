@@ -1,0 +1,150 @@
+footer {
+    padding-bottom: 40px;
+}
+
+footer .container {
+    border-radius: 20px;
+    background: #3D3076;
+    padding: 50px;
+    display: flex;
+    /* flex-direction: column; */
+    /* gap: 30px; */
+}
+
+footer .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer .logo {
+    width: 60%;
+}
+
+footer .addresses {
+    width: calc(75%);
+    display: flex;
+    font-size: 0.8em;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+    color: var(--8, #F5F5F5);
+}
+
+footer .block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .time {
+    font-family: "AtypText Thin";
+}
+
+footer .phone {
+    /* width: 200px; */
+    border-radius: 10px;
+    background: var(--1, #473886);
+    padding: 15px 20px 13px 20px;
+}
+
+footer .bottom {
+    display: flex;
+    gap: 90px;
+}
+
+footer .icons {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    height: 40%;
+}
+
+footer .icons>* {
+    width: 24px;
+}
+
+footer .bottom p {
+    color: var(--2, #6166AF);
+    font-size: 0.6em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 18px */
+    letter-spacing: -0.12px;
+}
+
+footer .left {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .right {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media screen and (max-width: 997px) {
+    footer .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .left {
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    footer .logo {
+        width: 12%;
+    }
+    footer .icons {
+        width: 15%;
+    }
+    footer .right {
+        width: 100%;
+    }
+    footer .addresses {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    footer .top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .addresses {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    footer .logo, footer .icons {
+        width: 25%;
+    }
+    footer .block {
+        width: 50%;
+    }
+    footer .addresses {
+        font-size: 1.2em;
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+    footer .bottom p {
+        font-size: 1em;
+    }
+    footer .phone {
+        width: 100%;
+        text-align: center;
+    }
+    footer .container {
+        padding: 30px 20px;
+    }
+}

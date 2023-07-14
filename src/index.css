@@ -3,6 +3,11 @@
   src: url(./fonts/AtypDisplay-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'AtypText Thin';
+  src: url(./fonts/AtypDisplay-Thin.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,7 +69,7 @@ button {
   padding: 0 40px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 728px) {
   .inner {
     padding: 0 20px;
   }

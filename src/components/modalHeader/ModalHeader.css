@@ -133,15 +133,24 @@
 }
 
 @media screen and (max-width: 901px) {
-    /* #header-modal {
-        height: 50px;
-    } */
-
     #header-modal nav {
         display: none;
     }
 
     #header-modal .burger-menu {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    #header-modal .phone {
+        display: none;
+    }
+    #header-modal button {
+        padding: 0 10px;
+        font-size: 1.3em;
+    }
+    #header-modal .inner {
+        width: calc(100% - 40px);
     }
 }
