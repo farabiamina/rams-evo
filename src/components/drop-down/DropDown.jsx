@@ -10,11 +10,11 @@ const DropDown = () => {
         <div id="drop-down" >
             <Header />
             <nav className={`drop-nav ${isDropDownOpen ? 'active' : ''}`}>
-                <a href="#">О проекте</a>
-                <a href="#">Преимущества</a>
-                <a href="#">Расположение</a>
-                <a href="#">Чистовая отделка</a>
-                <a href="#">All-in-One</a>
+                <a href="#evo">О проекте</a>
+                <a className='link' href="#field">Преимущества</a>
+                <a className='link' href="#location">Расположение</a>
+                {/* <a className='link' href="#">Чистовая отделка</a> */}
+                <a className='link' href="#all">All-in-One</a>
             </nav>
             <AnimatePresence>
                 {

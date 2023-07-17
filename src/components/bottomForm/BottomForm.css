@@ -1,6 +1,5 @@
 #bform .inner {
     overflow-x: visible;
-    /* overflow-y: auto; */
 }
 
 #bform .container {
@@ -8,10 +7,6 @@
     padding: 70px;
     border-radius: 10px;
     position: relative;
-    /* overflow-x: hidden;
-    overflow-y: auto; */
-    /* display: flex;
-    align-items: flex-end; */
 }
 
 #bform h2 {
@@ -28,7 +23,12 @@
     font-weight: 400;
     line-height: 150%;
     letter-spacing: -0.16px;
+    max-width: 60%;
 }
+
+#bform form p {
+    max-width: 100%;
+} 
 
 #bform form {
     padding-top: 40px;
@@ -40,18 +40,22 @@
 
 #bform input {
     max-width: 100%;
-    min-width: 60%;
+    min-width: 80%;
     padding: 12px 15px 10px 15px;
     border-radius: 10px;
     border: 1px solid #888;
     background: var(--6, #FFF);
-    color: #888;
+    color: var(--7, #1C1C29);
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
     letter-spacing: -0.16px;
     outline: none;
     font-size: 0.8em;
+}
+
+#bform input:focus {
+    border: 1px solid var(--1, #473886);
 }
 
 #bform button {
@@ -73,9 +77,11 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    /* height: 110%; */
+    height: 110%;
     width: 55%;
     /* left: 45%; */
+    object-fit: cover;
+    object-position: 0 100%;
 }
 
 #bform .error {
@@ -91,9 +97,32 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 728px) {
+@media screen and (min-width: 1718px) {
+    #bform .img {
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #bform form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    #bform form {
+        width: 50%;
+        gap: 10px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     #bform img {
         display: none;
+    }
+    #bform p {
+        margin: 0 auto;
     }
     #bform .container {
         padding: 40px 20px;

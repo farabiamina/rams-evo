@@ -42,16 +42,16 @@
 #evo .gogol-par {
     position: absolute;
     width: 18%;
-    top: 104%;
-    left: 60%;
+    top: 50%;
+    left: 26.5%;
     z-index: 2;
 }
 
 #evo .aues-par {
     position: absolute;
     width: 22%;
-    top: -27%;
-    right: -10%;
+    top: 30%;
+    left: 10%;
 }
 
 #evo .evo-img {
@@ -83,7 +83,7 @@
     width: 4.5%;
     height: 8%;
     border-radius: 100%;
-    border: 2px solid white;
+    border: 1px solid white;
     background-color: #473886;
     font-size: 0.7em;
     color: white;
@@ -127,7 +127,6 @@
     #evo .bottom {
         padding-top: 30px;
     }
-
 }
 
 

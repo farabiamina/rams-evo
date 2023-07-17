@@ -14,9 +14,10 @@ const ModalForm = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="overlay" onClick={(e) => {e.stopPropagation();setIsFormOpen(false)}}>
+                    className="overlay" onClick={() => setIsFormOpen(false)}>
                     <div
                         className={`form-con ${isFormOpen ? 'active' : ''}`}
+                        onClick={(e) => e.stopPropagation()}
                     >
                         <img src={ModalImg} alt="" />
                         <Form />

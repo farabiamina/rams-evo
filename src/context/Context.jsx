@@ -4,7 +4,9 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-  const [isFormOpen, setIsFormOpen] = useState(true);
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [is404, setIs404] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
     if (isDropDownOpen) {
@@ -15,6 +17,13 @@ const AppProvider = ({ children }) => {
       document.body.style.overflowY = "scroll"
     }
   }, [isDropDownOpen])
+
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    if (currentPath !== "/") {
+      setIs404(true);
+    }
+  }, [window.location.pathname]);
 
   useEffect(() => {
     if (isFormOpen) {
@@ -31,6 +40,10 @@ const AppProvider = ({ children }) => {
     setIsDropDownOpen,
     isFormOpen,
     setIsFormOpen,
+    is404,
+    setIs404,
+    isSubmitted,
+    setIsSubmitted,
   };
 
   return (

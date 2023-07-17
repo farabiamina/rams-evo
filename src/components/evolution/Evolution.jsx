@@ -29,7 +29,6 @@ const Evolution = () => {
       <div className="inner">
         <div className="left">
           <motion.h2
-
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -44,14 +43,29 @@ const Evolution = () => {
         </div>
         <div className='right'>
           <div className="picture">
-            <Parallax className='gogol-par' translateX={[0, -400]} translateY={[0, -334]}
-            // targetElement={targetElement}
+            {/* <Parallax className='gogol-par' translateX={[0, -400]} translateY={[0, -334]}
             >
               <GogolSvg className="gogol" />
             </Parallax>
-            <Parallax className='aues-par' translateX={[0, -470]} translateY={[0, 242]}>
+            <Parallax className='aues-par' translateX={[0, -470]} translateY={[0, 224]}>
               <AuesovSvg className="auesov" />
-            </Parallax>
+            </Parallax> */}
+            <motion.div className="gogol-par"
+              initial={{ y: 100, x: 120 }}
+              whileInView={{ y: 0, x: 0 }}
+              // viewport={{ once: true }}
+              transition={{ ease: "easeOut", duration: 2 }}
+            >
+              <GogolSvg className="gogol" />
+            </motion.div>
+            <motion.div
+              initial={{ y: -105, x: 250 }}
+              whileInView={{ y: 0, x: 0 }}
+              // viewport={{ once: true }}
+              transition={{ ease: "easeOut", duration: 2 }}
+              className="aues-par">
+              <AuesovSvg className="auesov" />
+            </motion.div>
             {/* <Controller>
               <Scene duration={1000} triggerHook="onEnter">
                 {(progress) => {

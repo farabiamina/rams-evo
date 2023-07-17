@@ -16,15 +16,17 @@ import BottomForm from './components/bottomForm/BottomForm';
 import Modalheader from './components/modalHeader/Modalheader';
 import Footer from './components/footer/Footer';
 import ModalForm from './components/modalForm/ModalForm';
+import P404 from './components/p404/P404';
 
 function App() {
   const [scrollerHeight, setScrollerHeight] = useState(0);
   const targetRef = useRef(null);
   let requestId = null;
+  const { is404, isSubmitted } = useContext(AppContext);
 
   const scroller = {
     target: targetRef.current,
-    ease: 0.05,
+    ease: 0.1,
     endY: 0,
     y: 0,
     resizeRequest: 1,
@@ -99,6 +101,13 @@ function App() {
     const mobileKeywords = ['android', 'webos', 'iphone', 'ipad', 'ipod', 'blackberry', 'windows phone'];
     return mobileKeywords.some(keyword => userAgent.includes(keyword));
   }
+
+  if (is404) {
+    return <P404/>;
+  } 
+  // else if (isSubmitted) {
+  //   return <Submited />;
+  // }
 
   return (
     <main>
