@@ -13,14 +13,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* overflow: scroll; */
 }
 
 #modal-form .form-con {
     border-radius: 20px;
     width: 500px;
-    height: 700px;
+    height: 650px;
+    max-height: 95vh;
     position: relative;
+    /* margin: 20px 0; */
     /* background-color: #1C1C29; */
     background-image: linear-gradient(to bottom, transparent 20%, #1C1C29 40%);
 }
@@ -50,7 +52,6 @@
     line-height: 150%;
     letter-spacing: -0.16px;
     outline: none;
-    font-size: 0.8em;
     width: 100%;
 }
 
@@ -63,7 +64,6 @@
     background: var(--1, #473886);
     padding: 12px 15px 10px 15px;
     color: var(--6, #FFF);
-    font-size: 0.8em;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -108,6 +108,14 @@
     opacity: 0.5;
 }
 
+#modal-form .close {
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
     #modal-form .form-con {
         width: calc(100% - 40px);
@@ -115,5 +123,24 @@
     }
     #modal-form form {
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #modal-form p {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #modal-form p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-height: 570px) {
+    #modal-form .form-con {
+        width: 350px;
+        height: 500px;
     }
 }

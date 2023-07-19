@@ -11,7 +11,7 @@ const BottomForm = () => {
                     <div className="left">
                         <h2>Оставьте заявку</h2>
                         <p>Наши специалисты подберут для Вас лучшие условия</p>
-                        <Form />
+                        <Form formId={" bottom-form"}/>
                     </div>
                     <img src={FormImg} alt="" className="img" />
                 </div>

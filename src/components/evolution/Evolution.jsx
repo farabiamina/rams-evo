@@ -59,11 +59,12 @@ const Evolution = () => {
               <GogolSvg className="gogol" />
             </motion.div>
             <motion.div
+              className="aues-par"
               initial={{ y: -105, x: 250 }}
               whileInView={{ y: 0, x: 0 }}
               // viewport={{ once: true }}
               transition={{ ease: "easeOut", duration: 2 }}
-              className="aues-par">
+            >
               <AuesovSvg className="auesov" />
             </motion.div>
             {/* <Controller>

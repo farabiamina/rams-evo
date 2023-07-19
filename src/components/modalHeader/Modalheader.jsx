@@ -4,39 +4,39 @@ import Logo from "../../svg/HeaderLogoDarkSvg";
 import { AppContext } from '../../context/Context';
 
 const Modalheader = () => {
-    const { isFormOpen, setIsFormOpen } = useContext(AppContext);
+    const { setIsFormOpen } = useContext(AppContext);
     const { isDropDownOpen, setIsDropDownOpen } = useContext(AppContext);
     const handleClick = () => {
         setIsDropDownOpen(prev => !prev);
     };
-    // useEffect(() => {
-    //     const smoothScroll = (event) => {
-    //         event.preventDefault();
-    //         const targetId = event.target.getAttribute('href').slice(1);
-    //         const targetElement = document.getElementById(targetId);
+    useEffect(() => {
+        const smoothScroll = (event) => {
+            event.preventDefault();
+            const targetId = event.target.getAttribute('href').slice(1);
+            const targetElement = document.getElementById(targetId);
 
-    //         const headerHeight = 0;
+            const headerHeight = 0;
 
-    //         // Calculate the adjusted scroll position
-    //         const scrollPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+            // Calculate the adjusted scroll position
+            const scrollPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
 
-    //         window.scrollTo({
-    //             top: scrollPosition,
-    //             behavior: 'smooth',
-    //         });
-    //     };
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth',
+            });
+        };
 
-    //     const anchorLinks = document.getElementsByClassName('link');
-    //     Array.from(anchorLinks).forEach((link) => {
-    //         link.addEventListener('click', smoothScroll);
-    //     });
+        const anchorLinks = document.getElementsByClassName('link');
+        Array.from(anchorLinks).forEach((link) => {
+            link.addEventListener('click', smoothScroll);
+        });
 
-    //     return () => {
-    //         Array.from(anchorLinks).forEach((link) => {
-    //             link.removeEventListener('click', smoothScroll);
-    //         });
-    //     };
-    // }, []);
+        return () => {
+            Array.from(anchorLinks).forEach((link) => {
+                link.removeEventListener('click', smoothScroll);
+            });
+        };
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -63,7 +63,7 @@ const Modalheader = () => {
                 <div className="left">
                     <Logo className="logo" />
                     <nav>
-                        <a href="#evo">О проекте</a>
+                        <a className='link' href="#evo">О проекте</a>
                         <a className='link' href="#field">Преимущества</a>
                         <a className='link' href="#location">Расположение</a>
                         {/* <a className='link' href="#">Чистовая отделка</a> */}
@@ -71,7 +71,7 @@ const Modalheader = () => {
                     </nav>
                 </div>
                 <div className="right">
-                    <a className="phone">
+                    <a href="tel: +77072124444" className="phone">
                         +7 707 212 44 44
                     </a>
                     <button onClick={() => setIsFormOpen(true)}>

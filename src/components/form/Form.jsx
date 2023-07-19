@@ -1,9 +1,9 @@
 import React, { useState, useContext } from 'react';
 import InputMask from 'react-input-mask';
-// import { AppContext } from '../../context/context';
+import { AppContext } from '../../context/Context';
 
 const Form = ({ formId }) => {
-    // const { toggleSuccessPage } = useContext(AppContext);
+    const { isSubmitted, setIsSubmitted, setIsFormOpen } = useContext(AppContext);
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
 
@@ -48,7 +48,8 @@ const Form = ({ formId }) => {
             body: formData,
         })
             .then(() => {
-                // toggleSuccessPage();
+                setIsSubmitted(true);
+                setIsFormOpen(false);
                 setName("");
                 setPhone("");
             })

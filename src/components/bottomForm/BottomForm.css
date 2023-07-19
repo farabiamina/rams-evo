@@ -26,6 +26,10 @@
     max-width: 60%;
 }
 
+#bform .left p {
+    padding-top: 5px;
+}
+
 #bform form p {
     max-width: 100%;
 } 
@@ -51,7 +55,6 @@
     line-height: 150%;
     letter-spacing: -0.16px;
     outline: none;
-    font-size: 0.8em;
 }
 
 #bform input:focus {
@@ -70,6 +73,12 @@
     line-height: 150%;
     letter-spacing: -0.16px;
     border: none;
+    transition: 0.4s;
+}
+
+#bform button:hover {
+    background-color: #59C5C7;
+    color: #473886;
 }
 
 #bform .img {
@@ -112,8 +121,6 @@
 @media screen and (max-width: 810px) {
     #bform form {
         width: 50%;
-        gap: 10px;
-        padding-top: 20px;
     }
 }
 
@@ -123,6 +130,7 @@
     }
     #bform p {
         margin: 0 auto;
+        max-width: 100%;
     }
     #bform .container {
         padding: 40px 20px;

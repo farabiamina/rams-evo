@@ -54,6 +54,12 @@
     line-height: 150%;
     letter-spacing: -0.16px;
     color: white;
+    transition: 0.4s;
+}
+
+#location button:hover {
+    background-color: #59C5C7;
+    color: #473886;
 }
 
 #location .parallax {

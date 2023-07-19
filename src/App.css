@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     background-color: #473886;
 }
 
@@ -9,7 +9,7 @@ main {
 }
 
 .viewport {
-    overflow: hidden;
+    /* overflow: hidden; */
     /* position: fixed; */
     height: 100%;
     width: 100%;
@@ -21,7 +21,7 @@ main {
 
 #scroll-container {
     /* position: absolute; */
-    overflow: hidden;
+    /* overflow: hidden; */
     backface-visibility: hidden;
     transform-style: preserve-3d;
 }

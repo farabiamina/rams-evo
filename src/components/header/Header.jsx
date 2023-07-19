@@ -8,34 +8,34 @@ const Header = () => {
   const handleClick = () => {
     setIsDropDownOpen(prev => !prev);
   };
-//   useEffect(() => {
-//     const smoothScroll = (event) => {
-//         event.preventDefault();
-//         const targetId = event.target.getAttribute('href').slice(1);
-//         const targetElement = document.getElementById(targetId);
+  useEffect(() => {
+    const smoothScroll = (event) => {
+        event.preventDefault();
+        const targetId = event.target.getAttribute('href').slice(1);
+        const targetElement = document.getElementById(targetId);
 
-//         const headerHeight = 0;
+        const headerHeight = 0;
 
-//         // Calculate the adjusted scroll position
-//         const scrollPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+        // Calculate the adjusted scroll position
+        const scrollPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
 
-//         window.scrollTo({
-//             top: scrollPosition,
-//             behavior: 'smooth',
-//         });
-//     };
+        window.scrollTo({
+            top: scrollPosition,
+            behavior: 'smooth',
+        });
+    };
 
-//     const anchorLinks = document.getElementsByClassName('link');
-//     Array.from(anchorLinks).forEach((link) => {
-//         link.addEventListener('click', smoothScroll);
-//     });
+    const anchorLinks = document.getElementsByClassName('link');
+    Array.from(anchorLinks).forEach((link) => {
+        link.addEventListener('click', smoothScroll);
+    });
 
-//     return () => {
-//         Array.from(anchorLinks).forEach((link) => {
-//             link.removeEventListener('click', smoothScroll);
-//         });
-//     };
-// }, []);
+    return () => {
+        Array.from(anchorLinks).forEach((link) => {
+            link.removeEventListener('click', smoothScroll);
+        });
+    };
+}, []);
   return (
     <header id='header'>
       <div className="inner">
@@ -43,7 +43,7 @@ const Header = () => {
           <Logo className="logo" />
         </div>
         <nav>
-          <a href="#evo">О проекте</a>
+          <a className='link' href="#evo">О проекте</a>
           <a className='link' href="#field">Преимущества</a>
           <a className='link' href="#location">Расположение</a>
           {/* <a className='link' href="#">Чистовая отделка</a> */}

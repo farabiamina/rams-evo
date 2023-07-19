@@ -8,6 +8,16 @@
   src: url(./fonts/AtypDisplay-Thin.ttf);
 }
 
+@font-face {
+  font-family: 'AtypText Bold';
+  src: url(./fonts/AtypDisplay-Semibold.ttf);
+}
+
+@font-face {
+  font-family: 'AtypText Medium';
+  src: url(./fonts/AtypDisplay-Medium.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,6 +52,19 @@ span {
 
 section {
   padding: 100px 0;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: 'AtypText Medium';
+  font-weight: 500 !important;
+}
+
+#sticky {
+  overflow-x: unset;
+}
+#banner {
+  overflow-y: hidden;
 }
 
 button {
@@ -82,13 +105,12 @@ h1 {
 h2 {
   color: var(--6, #FFF);
   font-style: normal;
-  font-weight: 400 !important;
   line-height: 109%;
   letter-spacing: -0.8px;
-  font-size: 2em;
+  font-size: 1.4em;
 }
 
-a, button {
+a, button, input {
   font-size: 0.8em;
 }
 
@@ -120,7 +142,7 @@ p {
 } */
 
 @media screen and (max-width: 810px) {
-  p, a, button {
+  p, a, button, input {
     font-size: 1em;
   }
 }
@@ -141,11 +163,11 @@ p {
   h1 {
     font-size: 3.2em;
   }
-  p, a, button {
+  p, a, button, input {
     font-size: 1.6em;
   }
   h2 {
-    font-size: 3em;
+    font-size: 2.2em;
   }
   section {
     padding: 50px 0;

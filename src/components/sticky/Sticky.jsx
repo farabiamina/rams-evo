@@ -20,25 +20,27 @@ const Sticky = () => {
         <section id='sticky'>
             <div className="inner">
                 <div className="con deck">
-                    <div className="card">
-                        <img src={St1Img} alt="" />
-                        <div className="text">
-                            <h2>Внешняя красота</h2>
-                            <p>Фасад RAMS EVO вдохновлен геометрической эстетикой современного города. Текстурный, но утонченный внешний образ жилого комплекса будет собран из объемных фиброцементных и клинкерных панелей в красных и бежевых тонах. А экстерьерное освещение подчеркнет динамичность дизайна. Жилой комплекс RAMS EVO станет эволюционным преображением всего района!</p>
-                        </div>
-                    </div>
-                    {/* <div className="card">
-                        <img src={St2Img} alt="" />
-                    </div> */}
+                    <div id="trigger">trigger</div>
                     <Controller>
-                        <Scene duration={1000} triggerHook={0.75} classToggle="active">
+                        <Scene duration={500} classToggle="visible" triggerElement="#trigger" indicators={"true"}>
+                            <div className="card">
+                                <img src={St1Img} alt="" />
+                                <div className="text">
+                                    <h2>Внешняя красота</h2>
+                                    <p>Фасад RAMS EVO вдохновлен геометрической эстетикой современного города. Текстурный, но утонченный внешний образ жилого комплекса будет собран из объемных фиброцементных и клинкерных панелей в красных и бежевых тонах. А экстерьерное освещение подчеркнет динамичность дизайна. Жилой комплекс RAMS EVO станет эволюционным преображением всего района!</p>
+                                </div>
+                            </div>
+                        </Scene>
+                    </Controller>
+                    <Controller>
+                        <Scene duration={500} classToggle="visible" indicators={"true"}>
                             <div className='card card2'>
                                 <img src={St2Img} alt="" />
                             </div>
                         </Scene>
                     </Controller>
                     <Controller>
-                        <Scene duration={1000} triggerHook={0.75} classToggle="active">
+                        <Scene duration={500} triggerHook={0.3} pin classToggle="active" triggerElement={".card3"}>
                             <div className='card card3'>
                                 <img src={St3Img} alt="" />
                                 <div className="text">

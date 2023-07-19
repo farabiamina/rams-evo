@@ -13,6 +13,14 @@ import Card7Svg from "../../svg/Card7Svg";
 import Card8Svg from "../../svg/Card8Svg";
 import { Carousel } from 'antd';
 import ArrowSvg from "../../svg/ArrowSvg";
+import Icon1Img from "../../images/icon1.png";
+import Icon2Img from "../../images/icon2.png";
+import Icon3Img from "../../images/icon3.png";
+import Icon4Img from "../../images/icon4.png";
+import Icon5Img from "../../images/icon5.png";
+import Icon6Img from "../../images/icon6.png";
+import Icon7Img from "../../images/icon7.png";
+
 
 const About = () => {
     const containerRef = useRef(null);
@@ -129,7 +137,8 @@ const About = () => {
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card1Svg className="card-svg" />
+                                {/* <Card1Svg className="card-svg" /> */}
+                                <img src={Icon1Img} alt="" />
                             </div>
                             <p>Велопаркинг и места для хранения детских колясок</p>
                         </div>
@@ -137,7 +146,8 @@ const About = () => {
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card2Svg className="card-svg" />
+                                {/* <Card2Svg className="card-svg" /> */}
+                                <img src={Icon2Img} alt="" />
                             </div>
                             <p>Безопасный двор без машин</p>
                         </div>
@@ -145,7 +155,8 @@ const About = () => {
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card3Svg className="card-svg" />
+                                {/* <Card3Svg className="card-svg" /> */}
+                                <img src={Icon3Img} alt="" />
                             </div>
                             <p>Школа во дворе</p>
                         </div>
@@ -153,7 +164,8 @@ const About = () => {
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card4Svg className="card-svg" />
+                                {/* <Card4Svg className="card-svg" /> */}
+                                <img src={Icon4Img} alt="" />
                             </div>
                             <p>Public Center с доступом Wi-Fi</p>
                         </div>
@@ -161,7 +173,8 @@ const About = () => {
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card5Svg className="card-svg" />
+                                {/* <Card5Svg className="card-svg" /> */}
+                                <img src={Icon5Img} alt="" />
                             </div>
                             <p>Безопасность 24/7</p>
                         </div>
@@ -169,7 +182,8 @@ const About = () => {
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card6Svg className="card-svg" />
+                                {/* <Card6Svg className="card-svg" /> */}
+                                <img src={Icon6Img} alt="" />
                             </div>
                             <p>Смарт-паркинг: въезд по номерам и зарядки для электрокаров</p>
                         </div>
@@ -177,19 +191,20 @@ const About = () => {
                     <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card7Svg className="card-svg" />
+                                {/* <Card7Svg className="card-svg" /> */}
+                                <img src={Icon7Img} alt="" />
                             </div>
                             <p>EVO-парк с беговыми дорожками</p>
                         </div>
                     </div>
-                    <div className="card">
+                    {/* <div className="card">
                         <div className="card-inner">
                             <div className="svg">
                                 <Card8Svg className="card-svg" />
                             </div>
                             <p>Чистовая отделка нового формата</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section >
