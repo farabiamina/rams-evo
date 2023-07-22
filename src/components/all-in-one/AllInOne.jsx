@@ -8,6 +8,7 @@ import All4Img from "../../images/all4.jpg";
 import AllBImg from "../../images/allB.png";
 import { motion } from "framer-motion";
 import { useSwipeable } from "react-swipeable";
+import ArrowSvg from "../../svg/ArrowSvg";
 
 const AllInOne = () => {
     const [position, setPosition] = useState(0);
@@ -58,35 +59,17 @@ const AllInOne = () => {
             }
         }
     };
-    // useEffect(() => {
-    //     const handleScroll = (event) => {
-    //         // Check the scroll direction
-    //         const scrollDirection = event.deltaY > 0 ? 'down' : 'up';
-
-    //         // Handle the scroll event based on direction
-    //         if (scrollDirection === 'down') {
-    //             handleSwipe("Right");
-    //         } else {
-    //             // Scroll up logic
-    //             handleSwipe("Left");
-    //         }
-    //     };
-
-    //     // Add the event listener when the component mounts
-    //     window.addEventListener('wheel', handleScroll);
-
-    //     // Clean up the event listener when the component unmounts
-    //     return () => {
-    //         window.removeEventListener('wheel', handleScroll);
-    //     };
-    // }, []);
     const transition = {
         duration: 0.5,
         type: "tween",
         ease: "easeInOut",
     };
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const handleSlideChange = (slideIndex) => {
+        setCurrentSlide(slideIndex);
+    };
     return (
-        <section id='all'>
+        <section id='all-in-one'>
             <div className="inner">
                 <AllSvg className="svg" />
                 <div {...handlers} className="carousel">
@@ -110,13 +93,28 @@ const AllInOne = () => {
                 </div>
                 <div className="bottom">
                     <img src={AllBImg} alt="" />
-                    <div>
+                    <div className='text'>
                         <h2>
                             ALL-IN-ONE
                         </h2>
                         <p>
                             В нескольких метрах от вашего дома появятся коворкинг, фитнес-зал, кинотеатр и детская комната. Это система All-in-One, которая будет внедрена в RAMS EVO, чтобы сделать места для работы, спорта и отдыха ближе к дому.
                         </p>
+                    </div>
+                    <div className="carousel-info">
+                        <div className='number'>
+                            <span className='current'>{(position + 1).toLocaleString('en-US', {
+                                minimumIntegerDigits: 2,
+                                useGrouping: false,
+                            })}</span> <span className='sup'>{(list.length).toLocaleString('en-US', {
+                                minimumIntegerDigits: 2,
+                                useGrouping: false,
+                            })}</span>
+                        </div>
+                        <div className="controls">
+                            <button onClick={()=>handleSwipe("Left")} disabled={position === 0}><ArrowSvg className="arrow" /></button>
+                            <button onClick={()=>handleSwipe("Right")} disabled={position === list.length}><ArrowSvg className="arrow rotate" /></button>
+                        </div>
                     </div>
                 </div>
                 <div className="cards">

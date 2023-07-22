@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Field = () => {
     return (
-        <section id="field">
+        <section id="advantages">
             <div className="inner">
                 <div className="left">
                     <motion.img

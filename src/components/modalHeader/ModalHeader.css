@@ -79,6 +79,12 @@
     font-weight: 400;
     background-color: #473886;
     padding: 0 20px;
+    transition: 0.4s;
+}
+
+#header-modal button:hover {
+    background-color: #59C5C7;
+    color: #473886;
 }
 
 #header-modal .burger-menu {

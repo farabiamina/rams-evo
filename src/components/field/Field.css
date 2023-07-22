@@ -1,15 +1,15 @@
-#field {
+#advantages {
     background-color: white;
 }
 
-#field .inner {
+#advantages .inner {
     display: flex;
     align-items: flex-end;
     /* justify-content: space-between; */
     gap: 80px;
 }
 
-#field .left {
+#advantages .left {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -17,20 +17,15 @@
     row-gap: 30px;
 }
 
-#field .right {
-    /* width: calc(35% - 80px); */
-    /* width: 500px; */
-}
-
-#field .left img:first-child {
+#advantages .left img:first-child {
     width: 24%;
 }
 
-#field .left img:last-child {
+#advantages .left img:last-child {
     width: calc(76% - 30px);
 }
 
-#field h2 {
+#advantages h2 {
     color: var(--1, #473886);
     font-style: normal;
     font-weight: 600;
@@ -39,7 +34,7 @@
     padding-bottom: 30px;
 }
 
-#field p {
+#advantages p {
     color: var(--7, #1C1C29);
     font-style: normal;
     font-weight: 400;
@@ -48,41 +43,35 @@
 }
 
 @media screen and (max-width: 1240px) {
-    #field .left {
+    #advantages .left {
         min-width: 55%;
     }
 }
 
 @media screen and (max-width: 1179px) {
-    #field .left {
+    #advantages .left {
         flex-direction: column-reverse;
         justify-content: space-between;
         height: 100%;
         min-width: 50%;
     }
-    #field .left img:last-child {
+    #advantages .left img:last-child {
         width: 100%;
     }
-    #field .left img:first-child {
+    #advantages .left img:first-child {
         width: 30%;
         display: none;
     }
-    #field .inner {
+    #advantages .inner {
         gap: 40px;
     }
 }
 
-@media screen and (max-width: 895px) {
-    #field .left {
-        /* min-width: 60%; */
-    }
-}
-
 @media screen and (max-width: 768px) {
-    #field .inner {
+    #advantages .inner {
         flex-direction: column;
     }
-    #field .right * {
+    #advantages .right * {
         text-align: center;
     }
 }

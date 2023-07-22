@@ -71,7 +71,7 @@ const Location = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ ease: "easeOut", duration: 2, delay: 0.2 }}
-                        >Отсюда удобно добираться в любой район города. Вы будете успевать на все запланированные встречи, ведь овладеть искусством тайм-менеджмента значительно проще, когда вы живете в центре города.</motion.p>
+                        >Удобное расположение RAMS EVO позволит вам быстро добираться в любой район города. Вы будете успевать на все запланированные встречи, ведь овладеть искусством тайм-менеджмента значительно проще, когда вы живете в центре города.</motion.p>
                         <button>Построить маршрут</button>
                     </div>
                 </div>
@@ -82,8 +82,8 @@ const Location = () => {
             </div>
             <ScrollVelocity className="ticker">
                 {
-                    pills.map(pill =>
-                        <div className="pill-item">
+                    pills.map((pill, index) =>
+                        <div key={index} className="pill-item">
                             <div className="pill">
                                 <span className='time'>{pill.time} min</span>
                                 <span>{pill.text[0]} <br /> {pill.text[1]}</span>

@@ -1,102 +1,157 @@
-#all .svg {
+
+
+#all-in-one .svg {
     width: 80%;
     position: relative;
     top: 20px;
     z-index: -1;
 }
 
-#all .row {
+#all-in-one .row {
     position: relative;
     height: 600px;
     display: flex;
     gap: 20px;
 }
 
-#all .container {
+#all-in-one .container {
     overflow-x: hidden;
     position: absolute;
 }
 
-#all .container img {
+#all-in-one .container img {
     width: 100%;
 }
 
-#all .bottom {
+#all-in-one .bottom {
     display: flex;
     gap: 136px;
     align-items: flex-start;
 }
 
-#all .bottom div {
+#all-in-one .text {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 60%;
 }
 
-#all .cards {
+#all-in-one .cards {
     display: none;
 }
 
+#all-in-one .carousel-info {
+    /* width: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+#all-in-one .number {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#all-in-one .current {
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.48px;
+}
+
+#all-in-one .sup {
+    font-size: 0.8em;
+}
+
+#all-in-one .controls {
+    display: flex;
+    gap: 9px;
+}
+
+#all-in-one .controls button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #6166AF;
+    transition: 0.2s;
+}
+
+#all-in-one .arrow.rotate {
+    transform: rotate(180deg);
+}
+
+#all-in-one .controls button:hover {
+    background-color: #59C5C7;
+}
+
 @media screen and (max-width: 1024px) {
-    #all .container {
+    #all-in-one .container {
         width: 60%;
         height: 100%;
     }
-    #all .row {
+    #all-in-one .row {
         height: 500px;
     }
-    #all .bottom {
+    #all-in-one .bottom {
         gap: 60px;
     }
 }
 
 @media screen and (max-width: 938px) {
-    #all .row {
+    #all-in-one .row {
         height: 450px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    #all .row {
+    #all-in-one .row {
         height: 400px;
     }
-    #all .bottom {
+    #all-in-one .bottom {
         gap: 35px;
     }
-    #all .bottom div {
+    #all-in-one .text {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 728px) {
-    #all .carousel {
+    #all-in-one .carousel {
         display: none;
     }
-    #all .svg {
+    #all-in-one .svg {
         display: none;
     }
-    #all .bottom > img {
+    #all-in-one .bottom > img {
         display: none;
     }
-    #all .bottom * {
+    #all-in-one .bottom * {
         text-align: center;
     }
-    #all .cards {
+    #all-in-one .cards {
         display: block;
         display: flex;
         flex-direction: column;
         gap: 50px;
         padding-top: 50px;
     }
-    #all .card {
+    #all-in-one .card {
         width: 100%;
     }
-    #all .card img {
+    #all-in-one .card img {
         width: 100%;
     }
-    #all .card p {
+    #all-in-one .card p {
         text-align: center;
         padding-top: 20px;
+    }
+    #all-in-one .carousel-info {
+        display: none;
     }
 }

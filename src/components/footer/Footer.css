@@ -28,7 +28,7 @@ footer .addresses {
     display: flex;
     font-size: 0.8em;
     /* gap: 50px; */
-    justify-content: space-evenly;
+    justify-content: space-between;
     line-height: 150%;
     letter-spacing: -0.16px;
     color: var(--8, #F5F5F5);

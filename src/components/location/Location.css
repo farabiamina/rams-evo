@@ -2,6 +2,7 @@
     display: flex;
     gap: 30px;
     padding-bottom: 45px;
+    align-items: stretch;
 }
 
 #location .left {
@@ -16,6 +17,11 @@
 
 #location .right {
     width: 50%;
+}
+
+#location .right > * {
+    width: 100%;
+    height: 100%;
 }
 
 #location .compas {
@@ -45,7 +51,7 @@
 #location button {
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background: var(--3, #9ABA4D);
     padding: 12px 26px 12px 26px;
     font-size: 1em;

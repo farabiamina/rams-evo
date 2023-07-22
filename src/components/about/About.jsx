@@ -2,15 +2,22 @@ import React, { useEffect, useRef, useState } from 'react';
 import "./About.css";
 import { motion } from "framer-motion";
 import AboutImg from "../../images/about.jpg";
+import Car1Img from "../../images/car1.jpg";
+import Car2Img from "../../images/car2.jpg";
+import Car3Img from "../../images/car3.jpg";
+import Car4Img from "../../images/car4.jpg";
+import Car5Img from "../../images/car5.jpg";
+import St1Img from "../../images/st1.jpg";
+import St2Img from "../../images/st2.jpg";
 import EVOsvg from "../../svg/EVOsvg";
-import Card1Svg from "../../svg/Card1Svg";
-import Card2Svg from "../../svg/Card2Svg";
-import Card3Svg from "../../svg/Card3Svg";
-import Card4Svg from "../../svg/Card4Svg";
-import Card5Svg from "../../svg/Card5Svg";
-import Card6Svg from "../../svg/Card6Svg";
-import Card7Svg from "../../svg/Card7Svg";
-import Card8Svg from "../../svg/Card8Svg";
+// import Card1Svg from "../../svg/Card1Svg";
+// import Card2Svg from "../../svg/Card2Svg";
+// import Card3Svg from "../../svg/Card3Svg";
+// import Card4Svg from "../../svg/Card4Svg";
+// import Card5Svg from "../../svg/Card5Svg";
+// import Card6Svg from "../../svg/Card6Svg";
+// import Card7Svg from "../../svg/Card7Svg";
+// import Card8Svg from "../../svg/Card8Svg";
 import { Carousel } from 'antd';
 import ArrowSvg from "../../svg/ArrowSvg";
 import Icon1Img from "../../images/icon1.png";
@@ -43,24 +50,36 @@ const About = () => {
             key: 1
         },
         {
-            image: AboutImg,
+            image: Car1Img,
             key: 2
         },
         {
-            image: AboutImg,
+            image: Car2Img,
             key: 3
         },
         {
-            image: AboutImg,
+            image: Car3Img,
             key: 4
         },
         {
-            image: AboutImg,
+            image: Car4Img,
             key: 5
-        }
+        },
+        {
+            image: Car5Img,
+            key: 6
+        },
+        {
+            image: St1Img,
+            key: 7
+        },
+        {
+            image: St2Img,
+            key: 8
+        },
     ];
     return (
-        <section id='about' ref={containerRef}>
+        <section id='evo' ref={containerRef}>
             <EVOsvg className="evo" />
             <div className="inner">
                 <div className="text">
@@ -112,6 +131,7 @@ const About = () => {
                             </div>
                         </div>
                         <Carousel
+                        dots={false}
                         ref={carouselRef}
                             className="carousel"
                             autoplay

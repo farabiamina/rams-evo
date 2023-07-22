@@ -11,8 +11,9 @@ const Banner = () => {
     return (
         <section id='banner'>
             <h1>
-                <span>РАССРОЧКА до <span>40 месяцев</span></span><br />
-                <span>только на старте продаж</span>
+                <span>РАССРОЧКА от застройщика до <span>40 месяцев</span></span> <br />
+                <span>0% переплаты</span>
+                 {/* | 30% первоначальный взнос? */}
             </h1>
             <div className="image-wrapper">
                 <img src={BannerImg}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./Sticky.css";
 import St1Img from "../../images/st1.jpg";
 import St2Img from "../../images/st2.jpg";
@@ -11,18 +11,10 @@ import { motion } from "framer-motion";
 
 
 const Sticky = () => {
-    const [isSceneActive, setIsSceneActive] = useState(false);
-    const handleSceneEnter = () => {
-        setIsSceneActive(true);
-        // Trigger animation or change class when the scene enters the viewport
-    };
     return (
         <section id='sticky'>
             <div className="inner">
                 <div className="con deck">
-                    <div id="trigger">trigger</div>
-                    <Controller>
-                        <Scene duration={500} classToggle="visible" triggerElement="#trigger" indicators={"true"}>
                             <div className="card">
                                 <img src={St1Img} alt="" />
                                 <div className="text">
@@ -30,17 +22,15 @@ const Sticky = () => {
                                     <p>Фасад RAMS EVO вдохновлен геометрической эстетикой современного города. Текстурный, но утонченный внешний образ жилого комплекса будет собран из объемных фиброцементных и клинкерных панелей в красных и бежевых тонах. А экстерьерное освещение подчеркнет динамичность дизайна. Жилой комплекс RAMS EVO станет эволюционным преображением всего района!</p>
                                 </div>
                             </div>
-                        </Scene>
-                    </Controller>
                     <Controller>
-                        <Scene duration={500} classToggle="visible" indicators={"true"}>
+                        <Scene duration={300} triggerHook={0.3} classToggle="active">
                             <div className='card card2'>
                                 <img src={St2Img} alt="" />
                             </div>
                         </Scene>
                     </Controller>
                     <Controller>
-                        <Scene duration={500} triggerHook={0.3} pin classToggle="active" triggerElement={".card3"}>
+                        <Scene duration={300} triggerHook={0.3} classToggle="active">
                             <div className='card card3'>
                                 <img src={St3Img} alt="" />
                                 <div className="text">
@@ -99,4 +89,4 @@ const Sticky = () => {
     )
 }
 
-export default Sticky
+export default Sticky;

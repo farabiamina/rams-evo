@@ -1,31 +1,16 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 import "./Evolution.css";
 import GogolSvg from "../../svg/GogolSvg";
 import AuesovSvg from "../../svg/AuesovSvg";
 import EvoImg from "../../images/evo1.png";
-import { Parallax } from 'react-scroll-parallax';
 import Evo2Img from "../../images/evo2.png";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Circle from './Circle';
-import { Controller, Scene } from 'react-scrollmagic';
-
 
 const Evolution = () => {
-  const [targetElement, setTarget] = useState();
   const targetRef = useRef();
-  // const { scrollYProgress } = useScroll(
-  //   {
-  //     target: targetRef,
-  //     offset: ["start end", "start start"]
-  //   }
-  // )
-  // const scale = useTransform(scrollYProgress, [0, 1], [0, 1]);
-  // const opacity = useTransform(scrollYProgress, [0, 1], [0, 10]);
-  // useEffect(() => {
-  //   setTarget(targetRef.current);
-  // }, [targetRef]);
   return (
-    <section id="evo" ref={targetRef}>
+    <section id="about" ref={targetRef}>
       <div className="inner">
         <div className="left">
           <motion.h2
@@ -51,19 +36,20 @@ const Evolution = () => {
               <AuesovSvg className="auesov" />
             </Parallax> */}
             <motion.div className="gogol-par"
-              initial={{ y: 100, x: 120 }}
+              initial={{ y: 75, x: 90 }}
               whileInView={{ y: 0, x: 0 }}
               // viewport={{ once: true }}
-              transition={{ ease: "easeOut", duration: 2 }}
+              transition={{ ease: "easeOut", duration: 2, exit: { duration: 0 } }}
             >
               <GogolSvg className="gogol" />
             </motion.div>
             <motion.div
               className="aues-par"
-              initial={{ y: -105, x: 250 }}
+              initial={{ y: -80, x: 200 }}
               whileInView={{ y: 0, x: 0 }}
+              exit={{ transition: { duration: 0 } }}
               // viewport={{ once: true }}
-              transition={{ ease: "easeOut", duration: 2 }}
+              transition={{ ease: "easeOut", duration: 2, exit: { duration: 0 } }}
             >
               <AuesovSvg className="auesov" />
             </motion.div>

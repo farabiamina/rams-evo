@@ -116,25 +116,88 @@
     cursor: pointer;
 }
 
+#modal-form .check {
+    color: #F5F5F5;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+    font-size: 0.7em;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+}
+
+#modal-form .check input {
+    display: none;
+}
+
+#modal-form .check span {
+    transition: 0.2s;
+    position: absolute;
+    top: 3px;
+    transform: translateY(25%);
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border-radius: 4px;
+    /* border: 1px solid #888; */
+}
+
+#modal-form .check input:checked~span {
+    background-color: #473886;
+    border-radius: 3px;
+}
+
+#modal-form .check span::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#modal-form .check input:checked~span:after {
+    display: block;
+}
+
+#modal-form .check span:after {
+    left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 @media screen and (max-width: 500px) {
     #modal-form .form-con {
         width: calc(100% - 40px);
         max-height: 70vh;
     }
+
     #modal-form form {
         padding: 20px;
     }
 }
 
+@media screen and (max-width: 1026px) {
+    #modal-form .check span {
+        top: 1px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
-    #modal-form p {
-        font-size: 0.7em;
+    #modal-form .check, #modal-form input, #modal-form button {
+        font-size: 0.9em;
     }
 }
 
 @media screen and (max-width: 800px) {
-    #modal-form p {
-        font-size: 0.8em;
+    #modal-form .check, #modal-form input, #modal-form button {
+        font-size: 1.3em;
     }
 }
 
@@ -142,5 +205,8 @@
     #modal-form .form-con {
         width: 350px;
         height: 500px;
+    }
+    #modal-form .check, #modal-form input, #modal-form button {
+        font-size: 1.5em;
     }
 }

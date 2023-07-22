@@ -32,7 +32,7 @@
 
 #bform form p {
     max-width: 100%;
-} 
+}
 
 #bform form {
     padding-top: 40px;
@@ -55,10 +55,15 @@
     line-height: 150%;
     letter-spacing: -0.16px;
     outline: none;
+    font-size: 0.7em;
 }
 
 #bform input:focus {
     border: 1px solid var(--1, #473886);
+}
+
+#bform input::placeholder {
+    font-family: "AtypText Thin";
 }
 
 #bform button {
@@ -74,6 +79,10 @@
     letter-spacing: -0.16px;
     border: none;
     transition: 0.4s;
+    /* font-family: "AtypText Thin"; */
+    /* font-weight: 500; */
+    font-size: 0.7em;
+    min-width: 200px;
 }
 
 #bform button:hover {
@@ -84,10 +93,10 @@
 #bform .img {
     /* position: relative; */
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     right: 0;
     height: 110%;
-    width: 55%;
+    width: 52%;
     /* left: 45%; */
     object-fit: cover;
     object-position: 0 100%;
@@ -106,9 +115,112 @@
     opacity: 1;
 }
 
+#bform .check {
+    color: var(--7, #1C1C29);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+    font-size: 0.7em;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+}
+
+#bform .check input {
+    display: none;
+}
+
+#bform .check span {
+    transition: 0.2s;
+    /* position: relative; */
+    position: absolute;
+    top: 2px;
+    transform: translateY(25%);
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #888;
+}
+
+#bform .check input:checked~span {
+    background-color: #473886;
+    border-radius: 3px;
+}
+
+#bform .check span::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#bform .check input:checked~span:after {
+    display: block;
+}
+
+#bform .check span:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#bform label>input[type="checkbox"]+div::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3A3A3E;
+    background-color: #473886;
+}
+
+#bform label>input[type="checkbox"]:checked+div::before {
+    content: "✓";
+    color: white;
+    text-align: center;
+}
+
 @media screen and (min-width: 1718px) {
     #bform .img {
+        width: 50%;
         height: unset;
+    }
+}
+
+@media screen and (min-width: 1718px) {
+    #bform .img {
+        width: 50%;
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 1465px) {
+    #bform .check span {
+        top: -1px;
+        transform: translateY(25%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #bform form {
+        width: 50%;
+    }
+    #bform .check span {
+        top: -3px;
+    }
+    #bform button {
+        font-size: 0.8em;
     }
 }
 
@@ -122,29 +234,45 @@
     #bform form {
         width: 50%;
     }
+    #bform input, #bform button, #bform .check {
+        font-size: 0.9em;
+    }
 }
 
 @media screen and (max-width: 768px) {
     #bform img {
         display: none;
     }
+
     #bform p {
         margin: 0 auto;
         max-width: 100%;
     }
+
     #bform .container {
         padding: 40px 20px;
         text-align: center;
     }
+
     #bform form {
         width: 100%;
     }
+
     #bform input {
         width: 100%;
         font-size: 1.5em;
     }
+
     #bform button {
         font-size: 1.5em;
         width: 100%;
+    }
+
+    #bform .check {
+        font-size: 1.2em;
+        text-align: left;
+    }
+    #bform .check span {
+        top: 1px;
     }
 }

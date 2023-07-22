@@ -1,18 +1,18 @@
-#evo .inner {
+#about .inner {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-#evo .left {
+#about .left {
     width: 35%;
 }
 
-#evo .right {
+#about .right {
     width: 60%;
 }
 
-#evo h2 {
+#about h2 {
     color: white;
     font-style: normal;
     font-weight: 600;
@@ -21,14 +21,14 @@
     padding-bottom: 30px;
 }
 
-#evo p {
+#about p {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
     letter-spacing: -0.16px;
 }
 
-#evo .picture {
+#about .picture {
     width: 100%;
     background-image: url("../../images/evo.jpg");
     height: 0;
@@ -39,7 +39,7 @@
     overflow: hidden;
 }
 
-#evo .gogol-par {
+#about .gogol-par {
     position: absolute;
     width: 18%;
     top: 50%;
@@ -47,27 +47,27 @@
     z-index: 2;
 }
 
-#evo .aues-par {
+#about .aues-par {
     position: absolute;
     width: 22%;
     top: 30%;
     left: 10%;
 }
 
-#evo .evo-img {
+#about .evo-img {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-#evo .bottom {
+#about .bottom {
     display: flex;
     gap: 5%;
     padding-top: 50px;
     align-items: flex-start;
 }
 
-#evo .bottom p {
+#about .bottom p {
     color: var(--8, #F5F5F5);
     font-style: normal;
     font-weight: 400;
@@ -76,7 +76,7 @@
     text-transform: uppercase;
 }
 
-#evo .circle {
+#about .circle {
     position: absolute;
     /* width: 30px;
     height: 30px; */
@@ -94,41 +94,57 @@
 }
 
 @media screen and (max-width: 768px) {
-    #evo .inner {
+    #about .inner {
         flex-direction: column;
         gap: 30px;
     }
 
-    #evo .left {
+    #about .left {
         width: 100%;
     }
 
-    #evo .right {
+    #about .right {
         width: 100%;
     }
 
-    #evo h2 {
+    #about h2 {
         font-weight: 500;
         text-align: center;
     }
 
-    #evo p {
+    #about p {
         text-align: center;
     }
 
-    /* #evo .inner {
+    /* #about .inner {
         font-size: calc(12px + 0.5vw);
     } */
 
-    #evo .circle-img {
+    #about .circle-img {
         display: none;
     }
 
-    #evo .bottom {
+    #about .bottom {
         padding-top: 30px;
     }
 }
 
+@media screen and (max-width: 400px) {
+    #about .gogol-par {
+        position: absolute;
+        width: 18%;
+        top: 47%;
+        left: 24%;
+        z-index: 2;
+    }
+    
+    #about .aues-par {
+        position: absolute;
+        width: 22%;
+        top: 30%;
+        left: 10%;
+    }
+}
 
 .A {
     left: 9%;
