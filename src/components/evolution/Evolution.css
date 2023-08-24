@@ -41,17 +41,25 @@
 
 #about .gogol-par {
     position: absolute;
-    width: 18%;
-    top: 50%;
-    left: 26.5%;
+    width: 7%;
+    top: 25%;
+    left: 12%;
+    z-index: 2;
+}
+
+#about .gogol2-par {
+    position: absolute;
+    width: 3%;
+    top: 85%;
+    left: 65%;
     z-index: 2;
 }
 
 #about .aues-par {
     position: absolute;
-    width: 22%;
-    top: 30%;
-    left: 10%;
+    width: 10%;
+    top: 65%;
+    left: 30%;
 }
 
 #about .evo-img {
@@ -80,12 +88,14 @@
     position: absolute;
     /* width: 30px;
     height: 30px; */
-    width: 4.5%;
-    height: 8%;
+    max-width: 34px;
+    max-height: 34px;
+    width: 3.5%;
+    height: 7%;
     border-radius: 100%;
     border: 1px solid white;
     background-color: #473886;
-    font-size: 0.7em;
+    font-size: 0.55em;
     color: white;
     display: flex;
     justify-content: center;
@@ -129,112 +139,95 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-    #about .gogol-par {
-        position: absolute;
-        width: 18%;
-        top: 47%;
-        left: 24%;
-        z-index: 2;
-    }
-    
-    #about .aues-par {
-        position: absolute;
-        width: 22%;
-        top: 30%;
-        left: 10%;
-    }
-}
-
 .A {
-    left: 9%;
-    top: 40%;
+    left: 84%;
+    top: 60%;
 }
 .B1 {
-    left: 32%;
-    top: 40%;
+    left: 65%;
+    top: 45%;
 }
 .B2 {
-    left: 28%;
-    top: 35%;
+    left: 66%;
+    top: 52%;
 }
 .C1 {
-    left: 39%;
-    top: 25%;
+    left: 52%;
+    top: 45%;
 }
 .C2 {
-    left: 34%;
-    top: 20%;
+    left: 52%;
+    top: 51%;
 }
 .C3 {
-    left: 29%;
-    top: 24%;
+    left: 59%;
+    top: 52%;
 }
 .D {
-    left: 43%;
-    top: 14%;
+    left: 41%;
+    top: 47%;
 }
 .E1 {
-    left: 53%;
-    top: 27%;
+    left: 43.5%;
+    top: 38.5%;
 }
 .E2 {
-    left: 57.5%;
-    top: 29%;
+    left: 45%;
+    top: 32%;
 }
 .E3 {
-    left: 62%;
-    top: 31%;
+    left: 46.5%;
+    top: 26%;
 }
 .F1 {
     left: 52%;
-    top: 35%;
+    top: 32%;
 }
 .F2 {
-    left: 46%;
-    top: 36%;
+    left: 57%;
+    top: 35%;
 }
 .F3 {
-    left: 41%;
-    top: 36%;
+    left: 57.5%;
+    top: 41%;
 }
 .G {
-    left: 55%;
-    top: 12%;
+    left: 32.5%;
+    top: 40%;
 }
 .H1 {
-    left: 62%;
-    top: 17%;
+    left: 27%;
+    top: 36%;
 }
 .H2 {
-    left: 64%;
-    top: 8%;
+    left: 23%;
+    top: 34%;
 }
 .I1 {
-    left: 71%;
-    top: 21%;
+    left: 31%;
+    top: 28%;
 }
 .I2 {
-    left: 71%;
-    top: 12%;
+    left: 25%;
+    top: 27%;
 }
 .J1 {
-    left: 80%;
-    top: 30%;
+    left: 34%;
+    top: 20.5%;
 }
 .J2 {
-    left: 79%;
-    top: 24%;
+    left: 30.5%;
+    top: 20%;
 }
 .K1 {
-    left: 73%;
-    top: 30%;
+    left: 39%;
+    top: 21%;
 }
 .K2 {
-    left: 69%;
-    top: 29%;
+    left: 37.5%;
+    top: 26.5%;
 }
 .K3 {
-    left: 65%;
-    top: 28%;
+    left: 36%;
+    top: 32%;
 }

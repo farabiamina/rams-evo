@@ -1,0 +1,208 @@
+#trade-in {
+    background-color: #fff;
+    margin-bottom: 70px;
+}
+
+#trade-in h2 {
+    color: var(--1, #473886);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 109%;
+    letter-spacing: -0.8px;
+    padding-bottom: 30px;
+}
+
+#trade-in p {
+    color: var(--7, #1C1C29);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}
+
+#trade-in .top {
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+#trade-in .text {
+    width: calc(100%/3 - 15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#trade-in .img {
+    width: calc(2 * 100%/3 - 15px);
+    background-image: url("../../images/trade.jpg");
+    background-size: cover;
+    background-position: 18% 0;
+    /* min-height: 900px; */
+    height: 0;
+    padding-bottom: 50%;
+}
+
+#trade-in .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+#trade-in .card:first-child {
+    width: calc(100%/3 - 20px);
+}
+
+#trade-in .card {
+    width: calc(100%/4.5 - 20px);
+    border-radius: 10px;
+    background: linear-gradient(220deg, rgba(188, 148, 255, 0.10) 0%, rgba(159, 102, 255, 0.10) 100%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+#trade-in h3 {
+    color: var(--1, #473886);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.48px;
+    font-size: 1.1em;
+}
+
+#trade-in hr {
+    background: #473886;
+    width: 100px;
+    height: 4px;
+    border: none;
+    margin-top: 40px;
+}
+
+#trade-in .con {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#trade-in h3 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#trade-in .con div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#trade-in svg {
+    width: 40%;
+    max-width: 30px;
+}
+
+#trade-in .inner>h3 {
+    padding-bottom: 30px;
+}
+
+#trade-in .trade-svg {
+    display: none;
+    /* width: 200px; */
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* @media screen and (max-width: 1200px) {
+    #trade-in .img {
+        min-height: 700px;
+    }
+} */
+
+@media screen and (max-width: 975px) {
+    #trade-in .img {
+        min-height: 500px;
+    }
+
+    #trade-in .card {
+        width: calc(50% - 15px);
+    }
+
+    #trade-in .card:first-child {
+        width: calc(50% - 15px);
+    }
+
+    #trade-in h3 {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 811px) {
+    #trade-in .img {
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #trade-in .top {
+        flex-direction: column;
+    }
+
+    #trade-in .top>* {
+        width: 100%;
+    }
+
+    #trade-in h3 {
+        font-size: 1.4em;
+    }
+
+    #trade-in h2,
+    p,
+    h3 {
+        text-align: center;
+    }
+
+    #trade-in .card * {
+        text-align: left;
+    }
+
+    #trade-in hr {
+        margin: 40px auto 0;
+    }
+
+    #trade-in .card {
+        width: 100%;
+    }
+
+    #trade-in .card:first-child {
+        width: 100%;
+    }
+
+    #trade-in .con div * {
+        text-align: left;
+    }
+
+    #trade-in .trade-svg {
+        display: block;
+    }
+
+    #trade-in .img {
+        position: relative;
+        left: -20px;
+        width: calc(100vw + 40px);
+        height: unset;
+        padding-bottom: 100%;
+        min-height: unset;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    #trade-in h3 {
+        font-size: 1.8em;
+    }
+}

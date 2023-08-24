@@ -91,13 +91,11 @@
 }
 
 #bform .img {
-    /* position: relative; */
     position: absolute;
     bottom: 0px;
     right: 0;
     height: 110%;
     width: 52%;
-    /* left: 45%; */
     object-fit: cover;
     object-position: 0 100%;
 }
@@ -193,14 +191,14 @@
 
 @media screen and (min-width: 1718px) {
     #bform .img {
-        width: 50%;
+        width: 48%;
         height: unset;
     }
 }
 
-@media screen and (min-width: 1718px) {
+@media screen and (min-width: 1607px) {
     #bform .img {
-        width: 50%;
+        width: 49%;
         height: unset;
     }
 }

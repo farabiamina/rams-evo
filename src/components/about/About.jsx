@@ -27,6 +27,7 @@ import Icon4Img from "../../images/icon4.png";
 import Icon5Img from "../../images/icon5.png";
 import Icon6Img from "../../images/icon6.png";
 import Icon7Img from "../../images/icon7.png";
+import Icon8Img from "../../images/icon8.png";
 
 
 const About = () => {
@@ -131,8 +132,8 @@ const About = () => {
                             </div>
                         </div>
                         <Carousel
-                        dots={false}
-                        ref={carouselRef}
+                            dots={false}
+                            ref={carouselRef}
                             className="carousel"
                             autoplay
                             afterChange={handleSlideChange}
@@ -217,14 +218,14 @@ const About = () => {
                             <p>EVO-парк с беговыми дорожками</p>
                         </div>
                     </div>
-                    {/* <div className="card">
+                    <div className="card">
                         <div className="card-inner">
                             <div className="svg">
-                                <Card8Svg className="card-svg" />
+                                <img src={Icon8Img} alt="" />
                             </div>
-                            <p>Чистовая отделка нового формата</p>
+                            <p>Dog Friendly парк</p>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section >

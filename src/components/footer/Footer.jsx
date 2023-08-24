@@ -11,9 +11,9 @@ const Footer = () => {
                     <div className="left">
                         <Logo className="logo" />
                         <div className="icons">
-                            <InstagramSvg />
-                            <YouTubeSvg />
-                            <FacebookSvg />
+                            <a target='_blank' href="https://www.instagram.com/rams_qazaqstan"><InstagramSvg /></a>
+                            <a target='_blank' href="https://youtube.com/@ramsqazaqstan"><YouTubeSvg /></a>
+                            <a target='_blank' href="https://www.facebook.com/ramspromokaz?mibextid=LQQJ4d"><FacebookSvg /></a>
                         </div>
                     </div>
                     <div className="right">
@@ -21,42 +21,42 @@ const Footer = () => {
                             <div className="addresses">
                                 <div className="block">
                                     <div className="adress">
-                                        г. Алматы, <br />
-                                        пр. Суюнбая 15б
+                                        <a target='_blank' href="https://go.2gis.com/3g2bpa">г. Алматы, <br />
+                                            пр. Суюнбая 15б</a>
                                     </div>
                                     <div className="time">
                                         Пн-Пт 10:00-20:00 <br />
-                                        Пн-Пт 10:00-20:00
+                                        Сб-Вс 10:00-19:00
                                     </div>
                                 </div>
                                 <div className="block">
                                     <div className="adress">
-                                        г. Алматы, <br />
-                                        ул. Темирязева, 37
+                                        <a target='_blank' href="https://go.2gis.com/ako301">г. Алматы, <br />
+                                            ул. Тимирязева, 37</a>
                                     </div>
                                     <div className="time">
                                         Пн-Пт 10:00-20:00 <br />
-                                        Пн-Пт 10:00-20:00
+                                        Сб-Вс 10:00-19:00
                                     </div>
                                 </div>
                                 <div className="block">
                                     <div className="adress">
-                                        г. Алматы, <br />
-                                        уд. Айманова, 120
+                                        <a target='_blank' href="https://go.2gis.com/w0d86">г. Алматы, <br />
+                                            уд. Айманова, 120</a>
                                     </div>
                                     <div className="time">
                                         Пн-Пт 10:00-20:00 <br />
-                                        Пн-Пт 10:00-20:00
+                                        Сб-Вс 10:00-19:00
                                     </div>
                                 </div>
                                 <div className="block">
                                     <div className="adress">
-                                        г. Алматы, <br />
-                                        ул. Жандосова, 94а
+                                        <a target='_blank' href="https://go.2gis.com/ajpzb">г. Алматы, <br />
+                                            ул. Жандосова, 94а</a>
                                     </div>
                                     <div className="time">
                                         Пн-Пт 10:00-20:00 <br />
-                                        Пн-Пт 10:00-20:00
+                                        Сб-Вс 10:00-19:00
                                     </div>
                                 </div>
                             </div>

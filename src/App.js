@@ -18,6 +18,7 @@ import Footer from './components/footer/Footer';
 import ModalForm from './components/modalForm/ModalForm';
 import P404 from './components/p404/P404';
 import Submitted from './components/submitted/Submitted';
+import TradeIn from './components/trade-in/TradeIn';
 
 function App() {
   const [scrollerHeight, setScrollerHeight] = useState(0);
@@ -127,6 +128,7 @@ function App() {
         <Sticky />
         <Impression />
         <AllInOne />
+        <TradeIn/>
         <BottomForm />
         <Footer />
       </div>

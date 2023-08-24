@@ -41,7 +41,7 @@ const ModalForm = () => {
                                 onClick={(e) => e.stopPropagation()}
                             >
                                 <img src={ModalImg} alt="" />
-                                <Form  formId={" modal-form"}/>
+                                <Form  formId={"pop-up"}/>
                             </div>
                         </motion.div>
                     }

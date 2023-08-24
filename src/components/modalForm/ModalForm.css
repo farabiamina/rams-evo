@@ -172,6 +172,17 @@
     transform: rotate(45deg);
 }
 
+@media screen and (max-width: 500px) {
+    #modal-form .form-con {
+        width: calc(100% - 40px);
+        max-height: 80vh;
+    }
+
+    #modal-form form {
+        padding: 20px;
+    }
+}
+
 @media screen and (max-width: 1026px) {
     #modal-form .check span {
         top: 1px;
