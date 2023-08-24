@@ -172,17 +172,6 @@
     transform: rotate(45deg);
 }
 
-@media screen and (max-width: 500px) {
-    #modal-form .form-con {
-        width: calc(100% - 40px);
-        max-height: 70vh;
-    }
-
-    #modal-form form {
-        padding: 20px;
-    }
-}
-
 @media screen and (max-width: 1026px) {
     #modal-form .check span {
         top: 1px;
@@ -201,12 +190,23 @@
     }
 }
 
-@media screen and (max-height: 570px) {
+/* @media screen and (max-height: 570px) {
     #modal-form .form-con {
         width: 350px;
         height: 500px;
     }
     #modal-form .check, #modal-form input, #modal-form button {
         font-size: 1.5em;
+    }
+} */
+
+@media screen and (max-width: 500px) {
+    #modal-form .form-con {
+        width: calc(100% - 40px);
+        max-height: 70vh;
+    }
+
+    #modal-form form {
+        padding: 20px;
     }
 }

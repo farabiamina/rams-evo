@@ -21,6 +21,20 @@ const Form = ({ formId }) => {
     const utmPlatform = urlParams.get('utm_platform');
 
     const prefixes = [
+        "27)",
+        "00)",
+        "08)",
+        "05)",
+        "71)",
+        "76)",
+        "77)",
+        "01)",
+        "02)",
+        "75)",
+        "78)",
+        "07)",
+        "47)",
+        "06)",
         "21) 31",
         "25) 32",
         "10) 33",
