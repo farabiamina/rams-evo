@@ -3,7 +3,7 @@ import InputMask from 'react-input-mask';
 import { AppContext } from '../../context/Context';
 
 const Form = ({ formId }) => {
-    const { isSubmitted, setIsSubmitted, setIsFormOpen } = useContext(AppContext);
+    const { setIsSubmitted, setIsFormOpen } = useContext(AppContext);
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [agreement, setAgreement] = useState(false);
@@ -13,14 +13,36 @@ const Form = ({ formId }) => {
     const [agrErr, setAgrErr] = useState(false);
 
     const urlParams = new URLSearchParams(window.location.search);
-    const utmSource = urlParams.get('utm_source');
-    const utmMedium = urlParams.get('utm_medium');
-    const utmCampaign = urlParams.get('utm_campaign');
-    const utmContent = urlParams.get('utm_content');
-    const utmTerm = urlParams.get('utm_term');
-    const utmPlatform = urlParams.get('utm_platform');
+    const utmSource = urlParams.get('utm_source')??"/";
+    const utmMedium = urlParams.get('utm_medium')??"/";
+    const utmCampaign = urlParams.get('utm_campaign')??"/";
+    const utmContent = urlParams.get('utm_content')??"/";
+    const utmTerm = urlParams.get('utm_term')??"/";
+    const utmPlatform = urlParams.get('utm_platform')??"/";
 
     const prefixes = [
+        "27)",
+        "00)",
+        "08)",
+        "05)",
+        "71)",
+        "76)",
+        "77)",
+        "01)",
+        "02)",
+        "75)",
+        "78)",
+        "07)",
+        "47)",
+        "06)",
+        "18)",
+        "26)",
+        "25)",
+        "74)",
+        "64)",
+        "63)",
+        "60)",
+        "62)",
         "21) 31",
         "25) 32",
         "10) 33",
@@ -310,6 +332,7 @@ const Form = ({ formId }) => {
         formData.append("name", name);
         formData.append("phone", phone);
         formData.append("form_id", formId);
+        formData.append("gclid", window.gid);
         formData.append("utm_source", utmSource);
         formData.append("utm_medium", utmMedium);
         formData.append("utm_campaign", utmCampaign);

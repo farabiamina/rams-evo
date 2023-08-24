@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import "./Evolution.css";
 import GogolSvg from "../../svg/GogolSvg";
+import Gogol2Svg from "../../svg/Gogol2Svg";
 import AuesovSvg from "../../svg/AuesovSvg";
 import EvoImg from "../../images/evo1.png";
 import Evo2Img from "../../images/evo2.png";
@@ -28,51 +29,15 @@ const Evolution = () => {
         </div>
         <div className='right'>
           <div className="picture">
-            {/* <Parallax className='gogol-par' translateX={[0, -400]} translateY={[0, -334]}
-            >
+            <div className="gogol-par">
               <GogolSvg className="gogol" />
-            </Parallax>
-            <Parallax className='aues-par' translateX={[0, -470]} translateY={[0, 224]}>
+            </div>
+            <div className="gogol2-par">
+              <Gogol2Svg className="gogol" />
+            </div>
+            <div className="aues-par">
               <AuesovSvg className="auesov" />
-            </Parallax> */}
-            <motion.div className="gogol-par"
-              initial={{ y: 75, x: 90 }}
-              whileInView={{ y: 0, x: 0 }}
-              // viewport={{ once: true }}
-              transition={{ ease: "easeOut", duration: 2, exit: { duration: 0 } }}
-            >
-              <GogolSvg className="gogol" />
-            </motion.div>
-            <motion.div
-              className="aues-par"
-              initial={{ y: -80, x: 200 }}
-              whileInView={{ y: 0, x: 0 }}
-              exit={{ transition: { duration: 0 } }}
-              // viewport={{ once: true }}
-              transition={{ ease: "easeOut", duration: 2, exit: { duration: 0 } }}
-            >
-              <AuesovSvg className="auesov" />
-            </motion.div>
-            {/* <Controller>
-              <Scene duration={1000} triggerHook="onEnter">
-                {(progress) => {
-                  const x = progress * -400; // Calculate the x-axis translation based on progress
-                  const y = progress * 270;
-
-                  return (
-                    <div className='aues-par' translateX={[0, -280]} translateY={[-20, 130]}>
-                      <AuesovSvg
-                        style={{
-                          transform: `translate(${x}%, ${y}%)`,
-                        }}
-                        className="auesov" />
-                    </div>
-                  );
-                }}
-              </Scene>
-            </Controller> */}
-            <img src={EvoImg} alt="" className='evo-img' />
-
+            </div>
             <Circle letter="A" />
             <Circle letter="B1" />
             <Circle letter="B2" />
@@ -96,16 +61,6 @@ const Evolution = () => {
             <Circle letter="K1" />
             <Circle letter="K2" />
             <Circle letter="K3" />
-
-          </div>
-          <div className="bottom">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ ease: "easeOut", duration: 2 }}
-            >Отсюда удобно добираться в любой район города. Вы будете успевать на все запланированные встречи, ведь овладеть искусством тайм-менеджмента значительно проще, когда вы живете в центре города.</motion.p>
-            <img src={Evo2Img} alt="" className='circle-img' />
           </div>
         </div>
       </div>

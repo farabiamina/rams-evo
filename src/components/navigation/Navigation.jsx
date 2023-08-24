@@ -11,8 +11,9 @@ const Navigation = (props) => {
             <a className='link' onClick={(e) => handleAnchorLinkClick(e, "#location")}>Расположение</a>
             {/* <a className='link' href="#">Чистовая отделка</a> */}
             <a className='link' onClick={(e) => handleAnchorLinkClick(e, "#all-in-one")}>All-in-One</a>
+            <a className='link' onClick={(e) => handleAnchorLinkClick(e, "#trade-in")}>Trade-in</a>
         </nav>
     )
 }
 
-export default Navigation
+export default Navigation;
